@@ -52,26 +52,26 @@ define gui.muted_color = '#666666'
 define gui.hover_muted_color = '#999999'
 
 ## Цвета, используемые в тексте диалогов и выборов.
-define gui.text_color = '#404040'
+define gui.text_color = '#FFFFFF'
 define gui.interface_text_color = '#404040'
 
 
 ## Шрифты и их размеры #########################################################
 
 ## Шрифт, используемый внутриигровым текстом.
-define gui.text_font = "DejaVuSans.ttf"
+define gui.text_font = "fonts/NotoSerif-Regular.ttf"
 
 ## Шрифт, используемый именами персонажей.
-define gui.name_text_font = "DejaVuSans.ttf"
+define gui.name_text_font = "fonts/NotoSerif-BoldItalic.ttf"
 
 ## Шрифт, используемый текстом вне игры.
 define gui.interface_text_font = "DejaVuSans.ttf"
 
 ## Размер нормального текста диалога.
-define gui.text_size = 66
+define gui.text_size = 60
 
 ## Размер имён персонажей.
-define gui.name_text_size = 90
+define gui.name_text_size = 80
 
 ## Размер текста в пользовательском интерфейсе.
 define gui.interface_text_size = 66
@@ -108,36 +108,35 @@ define gui.textbox_yalign = 1.0
 ## Местоположение имени говорящего персонажа по отношению к текстовому окну.
 ## Это могут быть целые значения в пикселях слева и сверху от начала окна или
 ## процентное отношение, например, 0.5 для центрирования.
-define gui.name_xpos = 720
-define gui.name_ypos = 0
+define gui.name_xpos = 960
+define gui.name_ypos = -40
 
 ## Горизонтальное выравнивание имени персонажа. Это может быть 0.0 для
 ## левоориентированного, 0.5 для центрированного и 1.0 для правоориентированного
 ## выравнивания.
-define gui.name_xalign = 0.0
+define gui.name_xalign = 0.5
 
 ## Ширина, высота и границы окна, содержащего имя персонажа или None, для
 ## автоматической размерки.
-define gui.namebox_width = None
-define gui.namebox_height = None
+define gui.namebox_width = 499
+define gui.namebox_height = 128
 
 ## Границы окна, содержащего имя персонажа слева, сверху, справа и снизу по
 ## порядку.
-define gui.namebox_borders = Borders(5, 5, 5, 5)
+define gui.namebox_borders = Borders(15, 15, 15, 15)
 
 ## Если True, фон текстового окна будет моститься (расширяться по эффекту
 ## плитки). Если False, фон текстового окна будет фиксированным.
-define gui.namebox_tile = False
-
+define gui.namebox_tile = True
 
 ## Размещение диалога по отношению к текстовому окну. Это могут быть целые
 ## значения в пикселях слева и сверху от текстового окна или процентное
 ## отношение, например, 0.5 для центрирования.
-define gui.dialogue_xpos = 804
-define gui.dialogue_ypos = 150
+define gui.dialogue_xpos = 752
+define gui.dialogue_ypos = 120
 
 ## Максимальная ширина текста диалога в пикселях.
-define gui.dialogue_width = 2232
+define gui.dialogue_width = 2326
 
 ## Горизонтальное выравнивание текста диалога. Это может быть 0.0 для
 ## левоориентированного, 0.5 для центрированного и 1.0 для правоориентированного
@@ -193,16 +192,29 @@ define gui.confirm_button_text_xalign = 0.5
 
 define gui.page_button_borders = Borders(30, 12, 30, 12)
 
-define gui.quick_button_borders = Borders(30, 12, 30, 0)
+define gui.quick_button_borders = Borders(60, 16, 60, 16)
 define gui.quick_button_text_size = 42
 define gui.quick_button_text_idle_color = gui.idle_small_color
 define gui.quick_button_text_selected_color = gui.accent_color
+
+define gui.quick_button_text_idle_color = "#ffffff"
+define gui.quick_button_text_hover_color = "#ffffff"
+define gui.quick_button_height = 80
 
 ## Вы также можете добавить собственные настройки, добавляя правильно
 ## именованные переменные. Например, вы можете раскомментировать следующую
 ## строчку, чтобы установить ширину кнопок навигации.
 
-# define gui.navigation_button_width = 250
+define gui.navigation_button_width = 640
+define gui.navigation_button_height = 183
+define gui.navigation_button_text_size = 60
+define gui.navigation_button_text_idle_color = "#dbbf81"
+define gui.navigation_button_text_hover_color = "#dfad14"
+define gui.navigation_button_text_xalign = 0.5
+define gui.navigation_button_text_yalign = 0.3
+# define gui.navigation_button_background = "gui/button/btn_menu_idle.png"
+# define gui.navigation_button_hover_background = "gui/button/btn_menu_hover.png"
+
 
 
 ## Кнопки Выбора ###############################################################
@@ -253,7 +265,7 @@ define gui.file_slot_rows = 2
 
 ## Местоположение левого края навигационных кнопок по отношению к левому краю
 ## экрана.
-define gui.navigation_xpos = 120
+define gui.navigation_xpos = 100
 
 ## Вертикальная позиция индикатора пропуска.
 define gui.skip_ypos = 30
@@ -265,7 +277,7 @@ define gui.notify_ypos = 135
 define gui.choice_spacing = 66
 
 ## Кнопки в секции навигации главного и игрового меню.
-define gui.navigation_spacing = 12
+define gui.navigation_spacing = 24
 
 ## Контролирует интервал между настройками.
 define gui.pref_spacing = 30

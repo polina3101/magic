@@ -337,6 +337,8 @@ style navigation_button_text is gui_button_text
 style navigation_button:
     size_group "navigation"
     properties gui.button_properties("navigation_button")
+    background "gui/button/btn_menu_idle.png"
+    hover_background "gui/button/btn_menu_hover.png"
 
 style navigation_button_text:
     properties gui.text_properties("navigation_button")
