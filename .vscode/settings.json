@@ -3,6 +3,10 @@
         "**/*.rpyc": true,
         "**/*.rpa": true,
         "**/*.rpymc": true,
-        "**/cache/": true
+        "**/cache/": true,
+        "**/*.rpy[bc]": true
+    },
+    "files.associations": {
+        "*.rpy": "renpy"
     }
 }

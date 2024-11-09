@@ -1,14 +1,14 @@
-"""
- Auto Highlight Ren'Py Module
- 2021 Daniel Westfall <SoDaRa2595@gmail.com>
+###
+#  Auto Highlight Ren'Py Module
+#  2021 Daniel Westfall <SoDaRa2595@gmail.com>
 
- http://twitter.com/sodara9
- I'd appreciate being given credit if you do end up using it! :D Would really
- make my day to know I helped some people out!
- http://opensource.org/licenses/mit-license.php
- Github: https://github.com/SoDaRa/Auto-Highlight
- itch.io: https://wattson.itch.io/renpy-auto-highlight
-"""
+#  http://twitter.com/sodara9
+#  I'd appreciate being given credit if you do end up using it! :D Would really
+#  make my day to know I helped some people out!
+#  http://opensource.org/licenses/mit-license.php
+#  Github: https://github.com/SoDaRa/Auto-Highlight
+#  itch.io: https://wattson.itch.io/renpy-auto-highlight
+###
 # Permission is hereby granted, free of charge, to any person
 # obtaining a copy of this software and associated documentation files
 # (the "Software"), to deal in the Software without restriction,
@@ -28,7 +28,7 @@
 # OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-""" Setup (IMPORTANT) """
+#  Setup (IMPORTANT) """
 ## To get this working you'll need to do two additional things along with having this file in your project.
 
 # - First, you'll need to setup your character definitions to support it.
@@ -55,13 +55,13 @@
 #     'eileen_happy'
 #     function SpriteFocus('eileen')
 
-""" General Note """
+# """ General Note """
 # - This file has to be compiled before any scripts that define images that use this.
 #   As such, this file is named 00auto-highlight.rpy to help with that.
 # - Be sure that all images that you want to share the same sprite highlight name
 #   are using the same image tag.
 
-""" Variables """
+# """ Variables """
 # - sprite_focus - (Dictionary) It is used to help inform who should be animated
 #                  and occasionaly holds timing data
 # - Has entries added to it in the SpriteFocus __call__ function.
@@ -78,7 +78,7 @@ define sprite_focus = {}
 #   or not.
 default speaking_char = None
 
-""" Transforms """
+# """ Transforms """
 # - This is the actual transform that will help apply the changes to your sprites.
 # - SpriteFocus is used as a callable class here. The function statement doesn't
 #   pass additional parameters to our function, so I use a callable class here to
@@ -119,16 +119,16 @@ init -10 python:
             # Add an entry for our char_name if it's not in the dictionary yet
             if char_name not in sprite_focus:
                 sprite_focus[char_name] = False
-            anim_length = 0.2       # How long (in seconds) the animation will last
-            bright_change = 0.08    # How much the brightness changes
-            sat_change = 0.2        # How much the saturation changes
-            zoom_change = 0.0025    # How much the zoom changes
+            anim_length = 0.6       # How long (in seconds) the animation will last
+            bright_change = 0.12    # How much the brightness changes
+            sat_change = 0.16        # How much the saturation changes
+            zoom_change = 0.04    # How much the zoom changes
             # - y_change is mostly here because the Minotaur Hotel sprites were made to be kept level with
             #   the bottom of the screen. The zoom change causes them to rise slightly
             #   above it. So I apply a small yoffset to keep them in place.
             # - If you have full sprites, this can be omitted.
             #   If you do, remember to remove the cooresponding lines in the Transform Manipulation near the bottom
-            y_change = 1            # How much y_offset to apply.
+            y_change = 10            # How much y_offset to apply.
 
             # is_talking - (Boolean) Determines if we're the talking char or not.
             #              True means we are talking. False means we aren't.
@@ -174,6 +174,9 @@ init -10 python:
             else:
                 sprite_focus[char_name] = is_talking # If done with time, register talking status
 
+            #опускаем говорящах персонажей вниз за экран
+            down_offscreen = 4
+
             #### Transform Manipulation ####
             # - This bit is what actually applies the changes to the sprite we're manipulating
             # - If you want a different effect for the talking and non-talking versions, you'll mostly
@@ -185,11 +188,11 @@ init -10 python:
             if is_talking: # Apply the talking transformation
                 trans.matrixcolor = SaturationMatrix((1.0-sat_change) + curr_ease * sat_change) * BrightnessMatrix(-bright_change + curr_ease * bright_change)
                 trans.zoom = min(curr_ease * zoom_change + (1.0-zoom_change), 1.0)
-                trans.yoffset = y_change - curr_ease * y_change # Delete here if you removed y_change earlier
+                trans.yoffset = y_change - curr_ease * y_change + down_offscreen # Delete here if you removed y_change earlier
             else:           # Apply the not-talking transformation
                 trans.matrixcolor = SaturationMatrix(1.0 - curr_ease * sat_change) * BrightnessMatrix(curr_ease * -bright_change)
                 trans.zoom = max(1.0 - curr_ease * zoom_change, (1.0-zoom_change))
-                trans.yoffset = y_change * curr_ease            # Delete here if you removed y_change earlier
+                trans.yoffset = y_change * curr_ease + down_offscreen           # Delete here if you removed y_change earlier
             # Finally, we don't really want to ever stop running this.
             # So we just ask to be continuously redrawn ASAP forever.
             # Returning > 0 will cause it to redraw slower. And returning None will cause it to stop running

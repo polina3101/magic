@@ -6,7 +6,7 @@ label s1scene0:
 
     scene schoolyard1
 
-    show sam at center
+    show sam a_n at center
 
     s "Добрый вечер. Надеюсь вы справились с выбором родного языка, и сейчас вы понимаете, что я вам говорю."
 
@@ -28,10 +28,11 @@ label s1scene0:
 
 label s1scene1:
 
-    scene nightcity
-    with fade
+    scene driving_scene
 
-    show sam at left
+    show sam a_n at left
+
+    show dad at right
 
     "Радиодиктор: Король объявил о своей свадьбе с дочерью министра экономики."
 
@@ -43,10 +44,9 @@ label s1scene1:
 
     d "Многие высшие чиновники молодо выглядят и долго живут в наше время. У них совсем другие возможности."
 
-    play sound "audio/boom.mp3"
+    play sound "audio/boomcar.mp3"
     with hpunch
     with vpunch
-
     #"Бум." (тряска, черный экран)
 
     show black
@@ -54,5 +54,7 @@ label s1scene1:
     s "Папа, ты меня слышишь? Очнись!"
 
     hide black
+
+    scene highway1
 
     return
