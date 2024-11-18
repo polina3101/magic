@@ -1,0 +1,90 @@
+[
+  {
+    "label": "quiz_s1ep2_fill_gap_manage",
+    "question": "¡Por supuesto! Yo ___, no te preocupes.",
+    "answers": [
+      { "text": "me las arreglaré", "correct": true },
+      { "text": "fumaré", "correct": false },
+      { "text": "beberé", "correct": false }
+    ]
+  },
+  {
+    "label": "quiz_s1ep2_translation",
+    "question": "",
+    "answers": [
+      { "text": "Por supuesto", "correct": true },
+      { "text": "Ciertamente", "correct": false }
+    ]
+  },
+  {
+    "label": "quiz_s1ep2_audio",
+    "question": "'Ten ___.'",
+    "answers": [
+      { "text": "cuidado", "correct": true },
+      { "text": "precaución", "correct": false }
+    ]
+  },
+  {
+    "label": "quiz_s1ep2_picture",
+    "question": "'Uniforme escolar'",
+    "answers": [
+      { "text": "uniforme escolar", "correct": true },
+      { "text": "ropa casual", "correct": false },
+      { "text": "ropa deportiva", "correct": false }
+    ]
+  },
+  {
+    "label": "quiz_s1ep2_translate_thank_you",
+    "answers": [
+      { "text": "Gracias", "correct": true },
+      { "text": "Dormitorio", "correct": false },
+      { "text": "Por supuesto", "correct": false }
+    ]
+  },
+  {
+    "label": "quiz_s1ep2_translate_careful",
+    "question": "cuidado"
+  },
+  {
+    "label": "quiz_s1ep2_fill_gap_new_life",
+    "question": "Emma comienza su ___.",
+    "answers": [
+      { "text": "nueva vida", "correct": true },
+      { "text": "nuevo dormitorio", "correct": false },
+      { "text": "nuevo uniforme escolar", "correct": false }
+    ]
+  },
+  {
+    "label": "quiz_s1ep2_picture_lovebirds",
+    "question": "'Pareja enamorada'",
+    "answers": [
+      { "text": "pareja enamorada", "correct": true },
+      { "text": "uniforme escolar", "correct": false },
+      { "text": "nueva vida", "correct": false }
+    ]
+  },
+  {
+    "label": "quiz_s1ep2_translate_lovebirds",
+    "answers": [
+      { "text": "pareja enamorada", "correct": true },
+      { "text": "nueva vida", "correct": false },
+      { "text": "uniforme escolar", "correct": false }
+    ]
+  },
+  {
+    "label": "quiz_s1ep2_sentence_translation",
+    "answers": [
+      { "text": "Me las arreglaré, no te preocupes", "correct": true },
+      { "text": "Tendré cuidado", "correct": false },
+      { "text": "¡Por supuesto! Caminaré", "correct": false }
+    ]
+  },
+  {
+    "label": "quiz_s1ep2_picture_campus",
+    "answers": [
+      { "text": "campus", "correct": true },
+      { "text": "escuela", "correct": false },
+      { "text": "dormitorio", "correct": false }
+    ]
+  }
+]

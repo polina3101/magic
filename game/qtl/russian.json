@@ -1,0 +1,90 @@
+[
+  {
+    "label": "quiz_s1ep2_fill_gap_manage",
+    "question": "Конечно! Я ___, не переживай.",
+    "answers": [
+      { "text": "справлюсь", "correct": true },
+      { "text": "курю", "correct": false },
+      { "text": "пью", "correct": false }
+    ]
+  },
+  {
+    "label": "quiz_s1ep2_translation",
+    "question": "",
+    "answers": [
+      { "text": "Конечно", "correct": true },
+      { "text": "Определенно", "correct": false }
+    ]
+  },
+  {
+    "label": "quiz_s1ep2_audio",
+    "question": "'Будь ___.'",
+    "answers": [
+      { "text": "осторожна", "correct": true },
+      { "text": "внимательна", "correct": false }
+    ]
+  },
+  {
+    "label": "quiz_s1ep2_picture",
+    "question": "'Школьная форма'",
+    "answers": [
+      { "text": "школьная форма", "correct": true },
+      { "text": "повседневная одежда", "correct": false },
+      { "text": "спортивная одежда", "correct": false }
+    ]
+  },
+  {
+    "label": "quiz_s1ep2_translate_thank_you",
+    "answers": [
+      { "text": "Спасибо", "correct": true },
+      { "text": "Общежитие", "correct": false },
+      { "text": "Конечно", "correct": false }
+    ]
+  },
+  {
+    "label": "quiz_s1ep2_translate_careful",
+    "question": "осторожна"
+  },
+  {
+    "label": "quiz_s1ep2_fill_gap_new_life",
+    "question": "Эмма начинает свою ___.",
+    "answers": [
+      { "text": "новую жизнь", "correct": true },
+      { "text": "новое общежитие", "correct": false },
+      { "text": "новую школьную форму", "correct": false }
+    ]
+  },
+  {
+    "label": "quiz_s1ep2_picture_lovebirds",
+    "question": "'Влюбленная парочка'",
+    "answers": [
+      { "text": "влюбленная парочка", "correct": true },
+      { "text": "школьная форма", "correct": false },
+      { "text": "новая жизнь", "correct": false }
+    ]
+  },
+  {
+    "label": "quiz_s1ep2_translate_lovebirds",
+    "answers": [
+      { "text": "влюбленная парочка", "correct": true },
+      { "text": "новая жизнь", "correct": false },
+      { "text": "школьная форма", "correct": false }
+    ]
+  },
+  {
+    "label": "quiz_s1ep2_sentence_translation",
+    "answers": [
+      { "text": "Я справлюсь, не переживай", "correct": true },
+      { "text": "Я буду осторожна", "correct": false },
+      { "text": "Конечно! Я дойду", "correct": false }
+    ]
+  },
+  {
+    "label": "quiz_s1ep2_picture_campus",
+    "answers": [
+      { "text": "кампус", "correct": true },
+      { "text": "школа", "correct": false },
+      { "text": "общежитие", "correct": false }
+    ]
+  }
+]

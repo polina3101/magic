@@ -1,0 +1,84 @@
+[
+	{
+	  "label": "s1scene1",
+	  "vocabulary": [
+		{
+		  "key": "возможности",
+		  "word": "возможности",
+		  "transcription": "/vɐzmoʐnɐˈstʲi/",
+		  "property": ""
+		},
+		{
+		  "key": "выглядеть",
+		  "word": "выглядеть",
+		  "transcription": "/vɨglʲɪˈtʲetʲ/",
+		  "property": ""
+		},
+		{
+		  "key": "объявить",
+		  "word": "объявить",
+		  "transcription": "/ɐbʲɪˈvʲitʲ/",
+		  "property": ""
+		},
+		{
+		  "key": "странный",
+		  "word": "странный",
+		  "transcription": "/ˈstrannɨj/",
+		  "property": ""
+		}
+	  ]
+	},
+	{
+	  "label": "s1ep3_sc1",
+	  "vocabulary": [
+		{
+		  "key": "привет",
+		  "word": "привет",
+		  "transcription": "/prʲɪˈvʲet/",
+		  "property": ""
+		},
+		{
+		  "key": "комната",
+		  "word": "комната",
+		  "transcription": "/ˈkomnətə/",
+		  "property": ""
+		},
+		{
+		  "key": "новая_соседка",
+		  "word": "новая соседка",
+		  "transcription": "/ˈnovəjə sɐˈsʲedkə/",
+		  "property": ""
+		},
+		{
+		  "key": "первый_курс",
+		  "word": "первый курс",
+		  "transcription": "/ˈpʲervɨj kurs/",
+		  "property": ""
+		},
+		{
+		  "key": "приятно_познакомиться",
+		  "word": "приятно познакомиться",
+		  "transcription": "/prʲɪˈjatnə pəznɐˈkomʲɪt͡sə/",
+		  "property": ""
+		},
+		{
+		  "key": "библиотека",
+		  "word": "библиотека",
+		  "transcription": "/bʲɪblʲɪɐˈtʲekə/",
+		  "property": ""
+		},
+		{
+		  "key": "кровать",
+		  "word": "кровать",
+		  "transcription": "/krɐˈvatʲ/",
+		  "property": ""
+		},
+		{
+		  "key": "вещи",
+		  "word": "вещи",
+		  "transcription": "/ˈvʲeɕːɪ/",
+		  "property": ""
+		}
+	  ]
+	}
+]

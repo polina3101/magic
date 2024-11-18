@@ -1500,6 +1500,139 @@ define bubble.expand_area = {
     "thought" : (0, 0, 0, 0),
 }
 
+########################################################################################
+# Пользовательские экраны
+########################################################################################
+
+## экран переключения языка в меню
+screen translatetest:
+    frame:
+        padding(10,10)
+        xalign(0.9)
+        yalign(0.8)
+
+        vbox:
+            label _("Язык")
+            textbutton "Русский" action Language(None) 
+            textbutton "English" action Language("english")
+
+
+#кнопка переключения языка для строк диалога
+screen translate:
+    tag translate_screen  # Добавление тега для облегчения обновления
+
+    if renpy.config.study_mode:
+        hbox:
+            xalign(0.89)
+            yalign(0.8)
+            imagebutton:
+                idle "gui/chng_lng_idle.png"
+                hover im.MatrixColor("gui/chng_lng_hover.png", im.matrix.brightness(0.1))  # Изображение с увеличенной яркостью при наведении
+                selected_idle "gui/chng_lng_selected.png"  # Нажатая кнопка
+                selected_hover im.MatrixColor("gui/chng_lng_selected.png", im.matrix.brightness(0.1))  # Нажатая кнопка при наведении
+                #action SetScreenVariable("translation_on", not translation_on)
+                action Function(toggle_language, _update_screens=True)  # Параметр для автоматического обновления экрана
+                selected renpy.config.translation_on  # Кнопка будет "нажатой", если выбран родной язык
+
+
+# Экран для вывода караоке
+screen karaoke_screen(study_line, translation_line):
+    frame:
+        style "karaoke_bg"
+
+    vbox:
+        align (0.5, 0.5)  # Centered at the bottom
+        spacing 30
+
+        # Line in the study language
+        text study_line style "karaoke_text_study"
+
+        # Translation line in the native language
+        text translation_line style "karaoke_text_translation"
+
+style karaoke_bg:
+    background Image("gui/textbox.png", xalign=0.5, yalign=0.53)
+
+style karaoke_text_study:
+    size 90
+    color "#212121"
+    xalign 0.5  # Center-align text
+
+style karaoke_text_translation:
+    size 70
+    color "#595B5B"
+    xalign 0.5  # Center-align text
+
+
+# Определение стилей для элементов экрана
+style vocab_column_text:
+    size 52
+    color "#ffffff"
+
+style vocab_column:
+    xsize 600
+    background "gui/bg_word.png"
+    padding (50, 25, 50, 50)
+
+style transcription_column:
+    xsize 600
+    background "gui/bg_transcription.png"
+    padding (50, 25, 50, 50)
+    
+screen vocabulary_screen(vocabulary):
+    # vocabulary - список словарей, каждый из которых содержит ключи 'word', 'transcription', 'translation'
+
+    tag words
+    add Solid("#34302cbd")
+
+    # Основной контейнер для слов в виде сетки с фоном
+    grid 3 len(vocabulary) spacing 100:
+        xalign 0.5
+        yalign 0.3
+        for entry in vocabulary:
+            # Первый столбец: слово на изучаемом языке
+            frame:
+                style "vocab_column"
+                text entry['word']:
+                    style "vocab_column_text"
+                    
+
+            # Второй столбец: транскрипция слова
+            frame:
+                style "transcription_column"
+                text entry['transcription']:
+                    style "vocab_column_text"
+
+            # Третий столбец: перевод слова на родной язык
+            frame:
+                style "vocab_column"
+                text entry['translation']:
+                    style "vocab_column_text"
+
+screen quiz_image_screen(image_path):
+    frame:
+        # Подложка для изображения
+        xalign 0.9  # Правый край экрана
+        yalign 0.25  # Центрирование по вертикали
+        xsize 1024   # Ширина окна (квадрат)
+        ysize 1024   # Высота окна (квадрат)
+        background "#cf9e6a"
+       
+
+
+        # Вложенное изображение на подложке
+        add image_path at quiz_img:
+            xalign 0.5
+            yalign 0.5
+
+        add "gui/picture_baground.png":
+            xalign 0.54
+            yalign 0.5
+
+style quiz_image_background:
+    padding (0, 250, 0, 0)  # Отступы внутри подложки
+    xalign 0.94
+    yalign 0.1
 
 
 ################################################################################

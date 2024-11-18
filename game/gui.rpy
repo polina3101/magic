@@ -118,16 +118,16 @@ define gui.name_xalign = 0.5
 
 ## Ширина, высота и границы окна, содержащего имя персонажа или None, для
 ## автоматической размерки.
-define gui.namebox_width = 499
+define gui.namebox_width = None
 define gui.namebox_height = 128
 
 ## Границы окна, содержащего имя персонажа слева, сверху, справа и снизу по
 ## порядку.
-define gui.namebox_borders = Borders(15, 15, 15, 15)
+define gui.namebox_borders = Borders(100, 15, 100, 15)
 
 ## Если True, фон текстового окна будет моститься (расширяться по эффекту
 ## плитки). Если False, фон текстового окна будет фиксированным.
-define gui.namebox_tile = True
+define gui.namebox_tile = False
 
 ## Размещение диалога по отношению к текстовому окну. Это могут быть целые
 ## значения в пикселях слева и сверху от текстового окна или процентное
@@ -221,10 +221,10 @@ define gui.navigation_button_text_yalign = 0.3
 ##
 ## Кнопки выбора используются во внутриигровых меню.
 
-define gui.choice_button_width = 2370
+define gui.choice_button_width = 1280
 define gui.choice_button_height = None
 define gui.choice_button_tile = False
-define gui.choice_button_borders = Borders(300, 15, 300, 15)
+define gui.choice_button_borders = Borders(50, 15, 50, 15)
 define gui.choice_button_text_font = gui.text_font
 define gui.choice_button_text_size = gui.text_size
 define gui.choice_button_text_xalign = 0.5

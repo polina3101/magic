@@ -1,0 +1,58 @@
+[
+  {
+    "label": "quiz_s1scene1_getting",
+    "question": "Our king is ___ married again?",
+    "answers": [
+      { "text": "taking", "correct": false },
+      { "text": "getting", "correct": true },
+      { "text": "giving", "correct": false }
+    ]
+  },
+  {
+    "label": "quiz_s1scene1_opportunities",
+    "question": "",
+    "answers": [
+      { "text": "opportunities", "correct": true },
+      { "text": "abilities", "correct": false }
+    ]
+  },
+  {
+    "label": "quiz_s1scene1_announce",
+    "question": "to announce",
+    "answers": []
+  },
+  {
+    "label": "quiz_s1scene1_sentence_strange",
+    "question": "",
+    "answers": [
+      { "text": "Isn't that strange?", "correct": true },
+      { "text": "This isn't strange?", "correct": false },
+      { "text": "Isn't that range?", "correct": false }
+    ]
+  },
+  {
+    "label": "quiz_s1scene1_audio_announced",
+    "question": "",
+    "answers": [
+      { "text": "announced", "correct": true }
+    ]
+  },
+  {
+    "label": "quiz_s1scene1_picture_wedding",
+    "question": "",
+    "answers": [
+      { "text": "announce", "correct": false },
+      { "text": "strange", "correct": false },
+      { "text": "wedding", "correct": true }
+    ]
+  },
+  {
+    "label": "quiz_s1scene1_audio_married",
+    "question": "",
+    "answers": [
+      { "text": "Our king is getting married again?", "correct": true },
+      { "text": "The King has announced his wedding", "correct": false },
+      { "text": "Isn't it too late to get married at 98?", "correct": false }
+    ]
+  }
+]
