@@ -1,7 +1,7 @@
 init python:
 ### Караоке
     import random  # Добавьте импорт random
-    
+
     all_songs_data = {}
     is_karaoke_active = False
 
@@ -71,6 +71,8 @@ init python:
     def show_karaoke(song_id):
 
         _dismiss_pause = False
+
+        renpy.music.stop()
         
         study_lines, translation_lines, timings, start_time, end_time = get_karaoke_song(song_id)
 

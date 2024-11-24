@@ -1555,12 +1555,12 @@ style karaoke_bg:
 
 style karaoke_text_study:
     size 90
-    color "#212121"
+    color "#ffffff"
     xalign 0.5  # Center-align text
 
 style karaoke_text_translation:
     size 70
-    color "#595B5B"
+    color "#dfad14"
     xalign 0.5  # Center-align text
 
 

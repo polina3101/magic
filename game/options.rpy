@@ -39,6 +39,8 @@ define gui.about = _p("""
 
 define build.name = "magic"
 
+define config.default_language = "english"
+
 
 ## Звуки и музыка ##############################################################
 
@@ -49,6 +51,8 @@ define build.name = "magic"
 define config.has_sound = True
 define config.has_music = True
 define config.has_voice = True
+
+define config.auto_voice = "{id}.mp3"
 
 
 ## Чтобы разрешить игроку тестировать громкость на звуковом или голосовом
@@ -63,7 +67,7 @@ define config.has_voice = True
 ## игры, если не будет остановлен, или не начнёт проигрываться другой аудиофайл.
 
 define config.main_menu_music = "main-menu-theme.mp3"
-define config.main_menu_music_fadein = 3.0
+define config.main_menu_music_fadein = 1.5
 
 
 ## Переходы ####################################################################

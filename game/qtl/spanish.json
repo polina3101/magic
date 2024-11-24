@@ -1,90 +1,58 @@
 [
   {
-    "label": "quiz_s1ep2_fill_gap_manage",
-    "question": "¡Por supuesto! Yo ___, no te preocupes.",
+    "label": "quiz_s1scene1_getting",
+    "question": "¿Nuestro rey se ___ casado de nuevo?",
     "answers": [
-      { "text": "me las arreglaré", "correct": true },
-      { "text": "fumaré", "correct": false },
-      { "text": "beberé", "correct": false }
+      { "text": "tomando", "correct": false },
+      { "text": "casándose", "correct": true },
+      { "text": "dando", "correct": false }
     ]
   },
   {
-    "label": "quiz_s1ep2_translation",
+    "label": "quiz_s1scene1_opportunities",
     "question": "",
     "answers": [
-      { "text": "Por supuesto", "correct": true },
-      { "text": "Ciertamente", "correct": false }
+      { "text": "oportunidades", "correct": true },
+      { "text": "habilidades", "correct": false }
     ]
   },
   {
-    "label": "quiz_s1ep2_audio",
-    "question": "'Ten ___.'",
+    "label": "quiz_s1scene1_announce",
+    "question": "anunciar",
+    "answers": []
+  },
+  {
+    "label": "quiz_s1scene1_sentence_strange",
+    "question": "",
     "answers": [
-      { "text": "cuidado", "correct": true },
-      { "text": "precaución", "correct": false }
+      { "text": "¿No es eso extraño?", "correct": true },
+      { "text": "¿Esto no es extraño?", "correct": false },
+      { "text": "¿No es eso rango?", "correct": false }
     ]
   },
   {
-    "label": "quiz_s1ep2_picture",
-    "question": "'Uniforme escolar'",
+    "label": "quiz_s1scene1_audio_announced",
+    "question": "",
     "answers": [
-      { "text": "uniforme escolar", "correct": true },
-      { "text": "ropa casual", "correct": false },
-      { "text": "ropa deportiva", "correct": false }
+      { "text": "anunciado", "correct": true }
     ]
   },
   {
-    "label": "quiz_s1ep2_translate_thank_you",
+    "label": "quiz_s1scene1_picture_wedding",
+    "question": "",
     "answers": [
-      { "text": "Gracias", "correct": true },
-      { "text": "Dormitorio", "correct": false },
-      { "text": "Por supuesto", "correct": false }
+      { "text": "anunciar", "correct": false },
+      { "text": "extraño", "correct": false },
+      { "text": "boda", "correct": true }
     ]
   },
   {
-    "label": "quiz_s1ep2_translate_careful",
-    "question": "cuidado"
-  },
-  {
-    "label": "quiz_s1ep2_fill_gap_new_life",
-    "question": "Emma comienza su ___.",
+    "label": "quiz_s1scene1_audio_married",
+    "question": "",
     "answers": [
-      { "text": "nueva vida", "correct": true },
-      { "text": "nuevo dormitorio", "correct": false },
-      { "text": "nuevo uniforme escolar", "correct": false }
-    ]
-  },
-  {
-    "label": "quiz_s1ep2_picture_lovebirds",
-    "question": "'Pareja enamorada'",
-    "answers": [
-      { "text": "pareja enamorada", "correct": true },
-      { "text": "uniforme escolar", "correct": false },
-      { "text": "nueva vida", "correct": false }
-    ]
-  },
-  {
-    "label": "quiz_s1ep2_translate_lovebirds",
-    "answers": [
-      { "text": "pareja enamorada", "correct": true },
-      { "text": "nueva vida", "correct": false },
-      { "text": "uniforme escolar", "correct": false }
-    ]
-  },
-  {
-    "label": "quiz_s1ep2_sentence_translation",
-    "answers": [
-      { "text": "Me las arreglaré, no te preocupes", "correct": true },
-      { "text": "Tendré cuidado", "correct": false },
-      { "text": "¡Por supuesto! Caminaré", "correct": false }
-    ]
-  },
-  {
-    "label": "quiz_s1ep2_picture_campus",
-    "answers": [
-      { "text": "campus", "correct": true },
-      { "text": "escuela", "correct": false },
-      { "text": "dormitorio", "correct": false }
+      { "text": "¿Nuestro rey se está casando de nuevo?", "correct": true },
+      { "text": "El Rey ha anunciado su boda", "correct": false },
+      { "text": "¿No es demasiado tarde para casarse a los 98?", "correct": false }
     ]
   }
 ]

@@ -32,6 +32,12 @@ translate english s1scene0_7b943fa7:
     # s "Выбери язык, который ты хочешь изучать."
     s "Choose the language you want to learn."
 
+# game/script.rpy:43
+translate english s1scene0_2fa2c474:
+
+    # s "Какой язык ты хочешь изучать?" nointeract
+    s "Which language do you want to learn?" nointeract
+
 # game/script.rpy:33
 translate english s1scene0_1f1a0699:
 
@@ -69,7 +75,7 @@ translate english s1scene1_bc1428ac:
     n "Radio announcer: The King has announced his wedding to the daughter of the Minister of Economy."
 
 # game/script.rpy:54
-translate english s1scene1_d3ee1e96:
+translate english s1scene1_eb0b201c:
 
     # s "Наш король снова собрался женится? Не поздно ли женится в 98 лет?"
     s "Our king is getting married again? Isn't it too late to get married at 98?"
@@ -81,7 +87,7 @@ translate english s1scene1_563f7550:
     d "He looks 35."
 
 # game/script.rpy:58
-translate english s1scene1_6d3f8902:
+translate english s1scene1_bdcacca9:
 
     # s "Разве это нестранно?"
     s "Isn't that strange?"
@@ -99,22 +105,22 @@ translate english s1scene1_1f81289b:
     s "Dad, can you hear me? Wake up!"
 
 # game/script.rpy:90
-translate english s1scene2_9de9b4e3:
+translate english s1scene2_d75ded4f:
 
-    # s "Вызывайте скорую, скорее! Мой отец без сознания."
-    s "Call an ambulance, quickly! My father is unconscious."
+    # s a_evil "Вызывайте скорую, скорее! Мой отец без сознания."
+    s a_evil "Call an ambulance, quickly! My father is unconscious."
 
 # game/script.rpy:92
-translate english s1scene2_0bea461c:
+translate english s1scene2_df877f0d:
 
-    # sm "Он выглядит странно. Почему он такой бледный? Тоже пострадал?"
-    sm "He looks strange. Why is he so pale? Was he hurt too?"
+    # sm a_eb "Он выглядит странно. Почему он такой бледный? Тоже пострадал?"
+    sm a_eb "He looks strange. Why is he so pale? Was he hurt too?"
 
 # game/script.rpy:94
-translate english s1scene2_2d1ed9f1:
+translate english s1scene2_d299b571:
 
-    # s "Блок!!! Он пытался стереть мою память? Что за черт!"
-    s "Block!!! He tried to erase my memory? What the hell!"
+    # s a_magic "Блок!!! Он пытался стереть мою память? Что за черт!"
+    s a_magic "Block!!! He tried to erase my memory? What the hell!"
 
 # game/script.rpy:96
 translate english s1scene2_0230d1dc:
@@ -123,10 +129,10 @@ translate english s1scene2_0230d1dc:
     ds "What kind of magic is this? Where did you study?"
 
 # game/script.rpy:98
-translate english s1scene2_40b84a36:
+translate english s1scene2_44b13971:
 
-    # s "Отдайте телефон. Я сам вызову скорую. Только попробуйте снова применить к нам магию!"
-    s "Give me the phone. I'll call the ambulance myself. Just try to use magic on us again!"
+    # s a_sr "Отдайте телефон. Я сам вызову скорую. Только попробуйте снова применить к нам магию!"
+    s a_sr "Give me the phone. I'll call the ambulance myself. Just try to use magic on us again!"
 
 # game/script.rpy:100
 translate english s1scene2_7c1ad6b4:
@@ -141,16 +147,16 @@ translate english s1scene2_b3d0b3c0:
     "He approached the driver's seat. Opened the door and touched my father's head. Father immediately regained consciousness. But the stranger staggered, leaned against the door and slid down onto the asphalt."
 
 # game/script.rpy:104
-translate english s1scene2_63658c09:
+translate english s1scene2_48e1a9f6:
 
-    # s "Что с вами? Вы не пьяны…"
-    s "What's wrong with you? You're not drunk..."
+    # s a_uuu "Что с вами? Вы не пьяны…"
+    s a_uuu "What's wrong with you? You're not drunk..."
 
 # game/script.rpy:106
-translate english s1scene2_7a29f3f5:
+translate english s1scene2_5fdc2510:
 
-    # sm "Что-то с ним не так. Что-то не так с его магией. Его энергия нестабильная. Кто-то аккумулировал его энергию. Это всегда связано с запрещенными приемами. Он из секты?"
-    sm "Something's wrong with him. Something's wrong with his magic. His energy is unstable. Someone has accumulated his energy. This is always associated with forbidden techniques. Is he from a cult?"
+    # sm a_eb "Что-то с ним не так. Что-то не так с его магией. Его энергия нестабильная. Кто-то аккумулировал его энергию. Это всегда связано с запрещенными приемами. Он из секты?"
+    sm a_eb "Something's wrong with him. Something's wrong with his magic. His energy is unstable. Someone has accumulated his energy. This is always associated with forbidden techniques. Is he from a cult?"
 
 # game/script.rpy:108
 translate english s1scene2_b0ab7201:
@@ -231,10 +237,10 @@ translate english s1scene2_bb8fec80:
     extend " I'll tell you who I am if you agree to my condition."
 
 # game/script.rpy:134
-translate english s1scene2_15e06fea:
+translate english s1scene2_911dc00d:
 
-    # s "Папа, с чего нам ему верить? Такие, как он, всегда все исправляют деньгами и связями. Давай не будем у него ничего брать? Прошу тебя. У меня плохое предчувствие."
-    s "Dad, why should we believe him? People like him always fix everything with money and connections. Let's not take anything from him? Please. I have a bad feeling."
+    # s a_sr "Папа, с чего нам ему верить? Такие, как он, всегда все исправляют деньгами и связями. Давай не будем у него ничего брать? Прошу тебя. У меня плохое предчувствие."
+    s a_sr "Dad, why should we believe him? People like him always fix everything with money and connections. Let's not take anything from him? Please. I have a bad feeling."
 
 # game/script.rpy:136
 translate english s1scene2_210cf0cc:
@@ -243,10 +249,10 @@ translate english s1scene2_210cf0cc:
     ds "Young man, I see you're bold. But I advise you to always take everything that's given to you. Especially today. Today fate is on your side."
 
 # game/script.rpy:138
-translate english s1scene2_ab31312c:
+translate english s1scene2_0d0c4205:
 
-    # s "Судьба на нашей стороне, потому что мы несильно пострадали."
-    s "Fate is on our side because we weren't badly hurt."
+    # s a_eb "Судьба на нашей стороне, потому что мы несильно пострадали."
+    s a_eb "Fate is on our side because we weren't badly hurt."
 
 # game/script.rpy:140
 translate english s1scene2_ca1b5a12:
@@ -255,10 +261,10 @@ translate english s1scene2_ca1b5a12:
     d "Provide guarantees."
 
 # game/script.rpy:142
-translate english s1scene2_3ffec94c:
+translate english s1scene2_7bf973d9:
 
-    # s "Папа!"
-    s "Dad!"
+    # s a_sr "Папа!"
+    s a_sr "Dad!"
 
 # game/script.rpy:144
 translate english s1scene2_77437088:
@@ -273,10 +279,10 @@ translate english s1scene2_678f2f8f:
     d "Director of the royal school of magic... Seriously?"
 
 # game/script.rpy:148
-translate english s1scene2_c4353635:
+translate english s1scene2_44575dad:
 
-    # s "Это какой-то новый вид мошенничества?"
-    s "Is this some new kind of scam?"
+    # s a_sr "Это какой-то новый вид мошенничества?"
+    s a_sr "Is this some new kind of scam?"
 
 # game/script.rpy:150
 translate english s1scene2_b7535ac1:
@@ -594,7 +600,7 @@ translate english s1scene5_71a38c8c:
 # game/script.rpy:472
 translate english s1scene7_f91a471a:
 
-    # s "How did you obtain these energies?"
+    # s "Как ты обрел эти энергии?"
     s "How did you obtain these energies?"
 
 # TODO: Translation updated at 2024-11-18 12:09
@@ -602,187 +608,175 @@ translate english s1scene7_f91a471a:
 # game/script.rpy:25
 translate english s1scene0_ea49bd65:
 
-    # s "Good evening. I hope you managed to choose your native language, and now you understand what I'm saying."
+    # s "Добрый вечер. Надеюсь, вы справились с выбором родного языка, и сейчас вы понимаете, что я вам говорю."
     s "Good evening. I hope you managed to choose your native language, and now you understand what I'm saying."
 
 # game/script.rpy:27
 translate english s1scene0_c4aaa42b:
 
-    # s "I got a bit dirty here, got into a small accident. But more on that later."
+    # s "Я тут немного испачкался, попал в небольшую аварию. Но об этом позже."
     s "I got a bit dirty here, got into a small accident. But more on that later."
 
 # game/script.rpy:29
 translate english s1scene0_cafbbbbd:
 
-    # s "You're in the visual novel 'Secret of the Royal School of Magic'. But here we'll be learning not only magic, but also a foreign language."
+    # s "Вы в визуальной новелле 'Секрет королевской школы магии'. Но мы тут с вами будем не только магию изучать, но и иностранный язык."
     s "You're in the visual novel 'Secret of the Royal School of Magic'. But here we'll be learning not only magic, but also a foreign language."
 
 # game/script.rpy:31
 translate english s1scene0_7b943fa7:
 
-    # s "Choose the language you want to learn."
+    # s "Выбери язык, который ты хочешь изучать."
     s "Choose the language you want to learn."
 
 # game/script.rpy:33
 translate english s1scene0_1f1a0699:
 
-    # s "When you see a round button on the right, you can click it to translate the line. Let's try it."
+    # s "Когда справа ты увидишь круглую кнопку, можешь нажать на нее, чтобы перевести реплику. Давай попробуем."
     s "When you see a round button on the right, you can click it to translate the line. Let's try it."
 
 # game/script.rpy:35
 translate english s1scene0_c62ef993:
 
-    # s "Click this button on the right ———>"
+    # s "Жми на эту кнопку справа ———>"
     s "Click this button on the right ———>"
 
 # game/script.rpy:37
 translate english s1scene0_eba3091e:
 
-    # s "To return to the original text, click this button again."
+    # s "Чтобы вернуть исходный текст, нажимай на эту кнопку повторно."
     s "To return to the original text, click this button again."
 
 # game/script.rpy:39
 translate english s1scene0_347b541d:
 
-    # s "If you made a mistake with language selection, you can fix it in the 'Options' menu. And there you can also adjust the music volume."
+    # s "Если ты что-то напутал с выбором языков, можешь исправить это в меню 'Опции'. А также там ты можешь отредактировать громкость музыки."
     s "If you made a mistake with language selection, you can fix it in the 'Options' menu. And there you can also adjust the music volume."
 
 # game/script.rpy:41
 translate english s1scene0_135ea8fa:
 
-    # s "I think I've told you all the most important things. Somewhere here our story begins. Actually, it has already begun. Let's go."
+    # s "Думаю, я рассказал вам все самое важное. Где-то здесь начинается наша история. Фактически, она уже началась. Пойдем."
     s "I think I've told you all the most important things. Somewhere here our story begins. Actually, it has already begun. Let's go."
 
 # game/script.rpy:52
 translate english s1scene1_bc1428ac:
 
-    # n "Radio announcer: The King has announced his marriage to the daughter of the Minister of Economy."
+    # n "Радиоведущий: Король объявил о своем браке с дочерью министра экономики."
     n "Radio announcer: The King has announced his marriage to the daughter of the Minister of Economy."
 
 # game/script.rpy:54
 translate english s1scene1_d3ee1e96:
 
-    # s "Our king is getting married again? Isn't it too late to get married at 98?"
+    # s "Наш король снова женится? Разве это не слишком поздно жениться в 98?"
     s "Our king is getting married again? Isn't it too late to get married at 98?"
 
 # game/script.rpy:56
 translate english s1scene1_563f7550:
 
-    # d "He looks 35."
+    # d "Он выглядит 35."
     d "He looks 35."
 
 # game/script.rpy:58
 translate english s1scene1_6d3f8902:
 
-    # s "Isn't that strange?"
+    # s "Разве это не странно?"
     s "Isn't that strange?"
 
 # game/script.rpy:60
 translate english s1scene1_78021324:
 
-    # d "Many high-ranking officials look young and live long these days. They have completely different opportunities."
+    # d "Многие высокопоставленные чиновники выглядят молодыми и живут долго в наши дни. У них совершенно другие возможности."
     d "Many high-ranking officials look young and live long these days. They have completely different opportunities."
 
 # game/script.rpy:69
 translate english s1scene1_1f81289b:
 
-    # s "Dad, can you hear me? Wake up!"
+    # s "Папа, ты слышишь меня? Проснись!"
     s "Dad, can you hear me? Wake up!"
 
 # game/script.rpy:90
 translate english s1scene2_9de9b4e3:
 
-    # s "Call an ambulance, quickly! My father is unconscious."
+    # s "Позвони в скорую, быстро! Мой отец без сознания."
     s "Call an ambulance, quickly! My father is unconscious."
-
-# game/script.rpy:92
-translate english s1scene2_0bea461c:
-
-    # sm "He looks strange. Why is he so pale? Was he injured too?"
-    sm "He looks strange. Why is he so pale? Was he injured too?"
 
 # game/script.rpy:94
 translate english s1scene2_2d1ed9f1:
 
-    # s "Block!!! Was he trying to erase my memory? What the hell!"
+    # s "Блок!!! Он пытался стереть мою память? Черт возьми!"
     s "Block!!! Was he trying to erase my memory? What the hell!"
 
 # game/script.rpy:96
 translate english s1scene2_0230d1dc:
 
-    # ds "What kind of magic is this? Where did you study?"
+    # ds "Какая это магия? Где ты учился?"
     ds "What kind of magic is this? Where did you study?"
 
 # game/script.rpy:98
 translate english s1scene2_40b84a36:
 
-    # s "Give me the phone. I'll call the ambulance myself. Just try to use magic on us again!"
+    # s "Дай мне телефон. Я сам позвоню в скорую. Только не пытайся использовать магию на нас снова!"
     s "Give me the phone. I'll call the ambulance myself. Just try to use magic on us again!"
 
 # game/script.rpy:100
 translate english s1scene2_7c1ad6b4:
 
-    # ds "No need for an ambulance, I'll handle everything myself."
+    # ds "Нет необходимости в скорой. Я все сам урегулирую."
     ds "No need for an ambulance, I'll handle everything myself."
 
 # game/script.rpy:102
 translate english s1scene2_b3d0b3c0:
 
-    # "He approached the driver's seat. Opened the door and touched my father's head. Father immediately regained consciousness. But the stranger staggered, leaned against the door and slid down onto the asphalt."
+    # "Он подошел к водительскому сиденью. Открыл дверь и прикоснулся к голове моего отца. Отец сразу же пришел в сознание. Но незнакомец пошатнулся, опираясь на дверь, и скатился на асфальт."
     "He approached the driver's seat. Opened the door and touched my father's head. Father immediately regained consciousness. But the stranger staggered, leaned against the door and slid down onto the asphalt."
 
 # game/script.rpy:104
 translate english s1scene2_63658c09:
 
-    # s "What's wrong with you? You're not drunk..."
+    # s "Что с тобой не так? Ты не пьян..."
     s "What's wrong with you? You're not drunk..."
-
-# game/script.rpy:106
-translate english s1scene2_7a29f3f5:
-
-    # sm "Something's wrong with him. Something's wrong with his magic. His energy is unstable. Someone has accumulated his energy. This is always associated with forbidden techniques. Is he from a cult?"
-    sm "Something's wrong with him. Something's wrong with his magic. His energy is unstable. Someone has accumulated his energy. This is always associated with forbidden techniques. Is he from a cult?"
 
 # game/script.rpy:108
 translate english s1scene2_b0ab7201:
 
-    # "The stranger gathered his strength and stood up."
+    # "Незнакомец собрал силы и встал на ноги."
     "The stranger gathered his strength and stood up."
 
 # game/script.rpy:110
 translate english s1scene2_ed7acaaf:
 
-    # ds "I'm sorry, I wasn't feeling well and lost control. Here's money for repairs and treatment if needed."
+    # ds "Прости, я не чувствовал себя хорошо и потерял контроль. Вот деньги на ремонт и лечение, если нужно."
     ds "I'm sorry, I wasn't feeling well and lost control. Here's money for repairs and treatment if needed."
 
 # game/script.rpy:115
 translate english s1scene2_2ca03b40:
 
-    # d "Wow! That's a lot of money! But why are you paying yourself? You have an expensive car. Don't you pay insurance?"
+    # d "Вау! Это много денег! Но почему ты платишь сам? У тебя дорогая машина. Ты не платишь страховку?"
     d "Wow! That's a lot of money! But why are you paying yourself? You have an expensive car. Don't you pay insurance?"
 
 # game/script.rpy:116
 translate english s1scene2_0c7e7bb7:
 
-    # d "And you look strange. Are you drunk? Or drugs? In any case, we need to call the road service. You're lucky my son wasn't hurt."
+    # d "И ты выглядишь странно. Ты пьян? Или наркотики? В любом случае, мы должны позвонить на дорогую службу. Ты повезло, что мой сын не пострадал."
     d "And you look strange. Are you drunk? Or drugs? In any case, we need to call the road service. You're lucky my son wasn't hurt."
 
 # game/script.rpy:118
 translate english s1scene2_83816f27:
 
-    # ds "Don't call. I have a good offer for you."
+    # ds "Не звони. У меня есть хороший предложение для вас."
     ds "Don't call. I have a good offer for you."
 
 # game/script.rpy:119
 translate english s1scene2_b6e7f507:
 
-    # ds "Your son is clearly very talented. But without proper education, he'll only be able to play with magic for entertainment. And that will only create problems for him."
+    # ds "Ваш сын явно очень талантлив. Но без надлежащего образования он будет только играть с магией для развлечения. И это только создаст проблемы для него."
     ds "Your son is clearly very talented. But without proper education, he'll only be able to play with magic for entertainment. And that will only create problems for him."
 
 # game/script.rpy:121
 translate english s1scene2_84934e90:
 
-    # d "What does my son have to do with this? What are you getting at?"
+    # d "Что мой сын имеет к этому отношение? К чему ты клонишь?"
     d "What does my son have to do with this? What are you getting at?"
 
 # game/script.rpy:123
@@ -1739,11 +1733,319 @@ translate english s1scene8_10bc472d_2:
     # n "To be continued..."
     n "To be continued..."
 
-translate english strings:
 
-    # game/script.rpy:12
-    old "Native language, родной язык, Lengua materna, Lingua madre, Langue maternelle"
-    new "Native language, родной язык, Lengua materna, Lingua madre, Langue maternelle"
+
+# TODO: Translation updated at 2024-11-24 19:39
+
+
+# game/script.rpy:255
+translate english s1scene4_d4bf8710:
+
+    # s a_xm "Сомневаюсь. Думаю, они их просто выкидывают, а гувернантки их продают. Вместо чаевых."
+    s a_xm ""
+
+# game/script.rpy:277
+translate english s1scene5_2a7a393e:
+
+    # s sch a_xm "Двери школы закрыты магией? Значит даже уборщицы в этой школе владеют основами магии? Но это простой для меня замок…"
+    s sch a_xm ""
+
+# game/script.rpy:293
+translate english s1scene5_843027b8:
+
+    # sm sch a_eb "Они могли бы говорить это хотя бы шепотом. Разве в королевской школе не учат хорошим манерам? Да, хорошее начало…"
+    sm sch a_eb ""
+
+# game/script.rpy:294
+translate english s1scene5_7ed31a78:
+
+    # extend sch a_sr " Но я не ожидал ничего другого от детей продажных чиновников."
+    extend sch a_sr ""
+
+# game/script.rpy:314
+translate english s1scene5_0252556b:
+
+    # s sch a_eb "А должен?"
+    s sch a_eb ""
+
+# game/script.rpy:318
+translate english s1scene5_885964be:
+
+    # s sch a_sr "Очень сомневаюсь."
+    s sch a_sr ""
+
+# game/script.rpy:322
+translate english s1scene5_6247bd89:
+
+    # s sch a_n "Здесь сложно учиться?"
+    s sch a_n ""
+
+# game/script.rpy:326
+translate english s1scene5_d1596e46:
+
+    # s sch a_smirk "Что? Я уже так популярен?"
+    s sch a_smirk ""
+
+# game/script.rpy:332
+translate english s1scene5_511a7665:
+
+    # s sch a_tt "Я тайный внебрачный сын директора."
+    s sch a_tt ""
+
+# game/script.rpy:336
+translate english s1scene5_2e846bf2:
+
+    # s sch a_smirk "Нет, конечно."
+    s sch a_smirk ""
+
+# game/script.rpy:338
+translate english s1scene5_e1bdff7c:
+
+    # sm sch a_tt "А она милая. И симпатичная. Может в этой школе будет и что-то хорошее."
+    sm sch a_tt ""
+
+# game/script.rpy:340
+translate english s1scene5_34381ff1:
+
+    # s sch a_n "А что насчет вас? Я слышал, что все учителя в этой школе выпускники элитных школ и университетов. Так кто ваши родители?"
+    s sch a_n ""
+
+# game/script.rpy:344
+translate english s1scene5_4d195ec5:
+
+    # s sch a_eb "Так я не первый неэлитный ученик в этой школе?"
+    s sch a_eb ""
+
+# game/script.rpy:349
+translate english s1scene5_dd155922:
+
+    # s sch a_n "Я расскажу эту тайну только вам."
+    s sch a_n ""
+
+# game/script.rpy:350
+translate english s1scene5_05040d64:
+
+    # extend sch a_smirk " Мой невероятный талант и безграничная харизма растопили холодное сердце директора, и он сделал для меня особое исключение."
+    extend sch a_smirk ""
+
+# game/script.rpy:354
+translate english s1scene5_c34bfb35:
+
+    # s sch a_smirk "Возможно, молодые симпатичные мальчики в его вкусе."
+    s sch a_smirk ""
+
+# game/script.rpy:364
+translate english s1scene5_87804a11:
+
+    # s sch a_uuu "Ух. Надеюсь, нам с папой не придется брать кредит."
+    s sch a_uuu ""
+
+# game/script.rpy:381
+translate english s1scene6_bd5c3d94:
+
+    # sm sch a_uuu "Они развязывают мои шнурки, серьезно? Что за ребячество!"
+    sm sch a_uuu ""
+
+# game/script.rpy:382
+translate english s1scene6_a24bc776:
+
+    # extend sch a_tt " Ооо. Кто-то расстегивает мне ширинку? Ха! Недурно. Надеюсь, это делает девушка. Да, это точно девушка. Какой нежный телекинез. Это точно буллинг?"
+    extend sch a_tt ""
+
+# game/script.rpy:384
+translate english s1scene6_4f699cf8:
+
+    # n "Класс: Ха,ха,ха!!!"
+    n ""
+
+# game/script.rpy:388
+translate english s1scene6_7a8be220:
+
+    # s sch a_sr "Не думаю, что кто-то здесь станет утруждаться запоминать мое имя. "
+    s sch a_sr ""
+
+# game/script.rpy:390
+translate english s1scene6_9049adf0:
+
+    # sm sch a_eb "Хм. И что это касается моей спины? Пишут что-то у меня на спине мелом? "
+    sm sch a_eb ""
+
+# game/script.rpy:391
+translate english s1scene6_065d4cb0:
+
+    # extend sch a_magic " Ладно, хватит игр! Сосредоточиться! Раз, два, три… Больше концентрации. Собрать в пальцах. Та-дам."
+    extend sch a_magic ""
+
+# game/script.rpy:423
+translate english s1scene6_770c7ada:
+
+    # s sch a_smirk "Да, мне это рассказали. Но, видимо, мне забыли рассказать, что я единственный в этой школе, кому запрещено баловаться магией."
+    s sch a_smirk ""
+
+# game/script.rpy:435
+translate english s1scene6_00ff14ec:
+
+    # s sch a_n "Что ж. Вы сейчас все думаете, о том, что я не один из вас. И что я никогда не стану одним из вас. Так вот, знайте - я и не собираюсь. И я не надеюсь, что мы подружимся. Давайте просто не будем донимать друг друга."
+    s sch a_n ""
+
+# game/script.rpy:464
+translate english s1scene7_1f578437:
+
+    # sm sch a_n "Каким бы дерьмом не были люди в этой школе, уроки здесь действительно другого уровня. Было непросто…"
+    sm sch a_n ""
+
+# game/script.rpy:468
+translate english s1scene7_cb77a0a0:
+
+    # sm sch a_eb "О, меня уже ждут. Не ожидал, что стану им так интересен в первый же день. "
+    sm sch a_eb ""
+
+# game/script.rpy:481
+translate english s1scene7_8ec9328a:
+
+    # sm sch a_sr "Черт! Это было неожиданно!"
+    sm sch a_sr ""
+
+# game/script.rpy:483
+translate english s1scene7_09f0c587:
+
+    # s sch a_smirk "Разве плохие парни перед дракой не должны сначала произнести длинную торжественную речь?"
+    s sch a_smirk ""
+
+# game/script.rpy:487
+translate english s1scene7_0658a3cc:
+
+    # sm sch a_n "Это явно их предводитель. Знакомое лицо. Я точно видел его, когда читал о школе. "
+    sm sch a_n ""
+
+# game/script.rpy:489
+translate english s1scene7_617cc0f9:
+
+    # sm sch a_magic "Собрать всю энергию… Поднять, сконцентрировать, усилить. Взять силу камней. Есть ли рядом металл? Забор… Сойдет. Взять силу металла. Теперь в глаза… Стена… Готово. Главное не моргнуть."
+    sm sch a_magic ""
+
+# game/script.rpy:503
+translate english s1scene7_6cdb303f:
+
+    # sm sch a_eb "Вспомнил. Он же девятый сын президента, его четырнадцатый ребенок. "
+    sm sch a_eb ""
+
+# game/script.rpy:505
+translate english s1scene7_b8ab7312:
+
+    # s sch a_smirk "Так вот как развлекаются дети президента. Отличный сюжет для новостей. "
+    s sch a_smirk ""
+
+# game/script.rpy:509
+translate english s1scene7_b6b93cef:
+
+    # sm sch a_magic "Вот сейчас точно не стоит моргать! "
+    sm sch a_magic ""
+
+# game/script.rpy:515
+translate english s1scene7_c4b72abe:
+
+    # sm sch a_n "Он смог пробить стену… "
+    sm sch a_n ""
+
+# game/script.rpy:523
+translate english s1scene7_f8a5f5e0:
+
+    # s sch a_eb "Но знаешь, есть кое-что странное. Это была энергия трех разных людей. И это не твои дружки. "
+    s sch a_eb ""
+
+# game/script.rpy:527
+translate english s1scene7_9b188c00:
+
+    # s sch a_n "Как ты обрел эти энергии? "
+    s sch a_n ""
+
+# game/script.rpy:531
+translate english s1scene7_d7a74f0d:
+
+    # s sch a_xm "А ты еще мне не поверил? Ладно. Давай, ударь меня еще раз. "
+    s sch a_xm ""
+
+# game/script.rpy:553
+translate english s1scene7_bb62df13:
+
+    # s sch a_sr "Очевидно, что ты знаешь не всех. Лучше держись от меня подальше. Иначе я не стану молчать. "
+    s sch a_sr ""
+
+# game/script.rpy:557
+translate english s1scene7_959738df:
+
+    # s sch a_smirk "А ты явно много мной интересовался. Даже моими родителями… Думаю, что теперь я тебе интересен еще больше. "
+    s sch a_smirk ""
+
+# game/script.rpy:587
+translate english s1scene8_9fd30e4f:
+
+    # s a_sr "Значит, если человека убить в тот момент, когда он применяет свою энергию, можно получить его энергию себе?"
+    s a_sr ""
+
+# game/script.rpy:591
+translate english s1scene8_d58b8263:
+
+    # s a_n "И все же."
+    s a_n ""
+
+# game/script.rpy:596
+translate english s1scene8_8fb68fd8:
+
+    # s a_eb "Но я же непервый в мире ребенок, чья мама умерла после родов."
+    s a_eb ""
+
+# game/script.rpy:602
+translate english s1scene8_04bf4a6b:
+
+    # s a_n "О моем случае мир тоже не знает."
+    s a_n ""
+
+# game/script.rpy:608
+translate english s1scene8_3639d04b:
+
+    # s a_uuu "Ей угрожали?"
+    s a_uuu ""
+
+# game/script.rpy:612
+translate english s1scene8_c668f042:
+
+    # s a_n "Значит, я должен всю жизнь скрывать свою двойную энергию?"
+    s a_n ""
+
+# game/script.rpy:624
+translate english s1scene8_df1901da:
+
+    # sm a_sr "Откуда у сына короля три базиса?"
+    sm a_sr ""
+
+# game/script.rpy:627
+translate english s1scene8_9f6d46f2:
+
+    # sm a_eb "И все три базиса явно не его. Свой он не использует. Он точно не добрый парень, ни девушка и ни мужчина средних лет. У него вообще есть свой базис?"
+    sm a_eb ""
+
+# game/script.rpy:629
+translate english s1scene8_ec348bea:
+
+    # sm a_eb "У него два чужих базиса. А это уже не похоже на мой случай."
+    sm a_eb ""
+
+# game/script.rpy:631
+translate english s1scene8_53acaa1e:
+
+    # sm a_n "Хотя вместе их сила была достаточной, по отдельности это довольно слабые энергии… Все это очень странно."
+    sm a_n ""
+
+# game/script.rpy:636
+translate english s1scene8_2261c551:
+
+    # n "Спасибо за внимание"
+    n ""
+
+translate english strings:
+   
     # game/script.rpy:12
     old "English"
     new "English"
@@ -1772,3 +2074,22 @@ translate english strings:
     old "Поставить блок"
     new "Block"
 
+    # game/script.rpy:103
+    old "Пора пройти небольшой квиз."
+    new "Time for a small quiz."
+
+    # game/script.rpy:104
+    old "Пройти квиз"
+    new "Take the quiz"
+
+    # game/script.rpy:106
+    old "Пропустить квиз"
+    new "Skip the quiz"
+
+    # game/script.rpy:233
+    old "Слушать караоке"
+    new "Listen to karaoke"
+
+    # game/script.rpy:233
+    old "Пропустить"
+    new "Skip"

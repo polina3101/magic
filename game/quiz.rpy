@@ -1,10 +1,21 @@
-define right_answer = "Правильно! Отличная работа!"
-define wrong_answer = "Нет. Правильный ответ: [correct_answer]."
+define right_answer = _("Правильно! Отличная работа!")
+define wrong_answer = _("Нет. Правильный ответ: ")
+
+# Массив с фразами
+define phrases = [
+    _("Давай проверим, как мы усвоили этот урок."),
+    # _("Пора пройти небольшой квиз."),  # Закомментировано, если не нужно
+    _("Ты должен ответить на несколько вопросов."),
+    _("Нужно немного позаниматься."),
+    _("Надеюсь, вы готовы к проверке знаний!")
+]
+
 
 init python:
 
     import json
     import os
+    import random
 #     class Question:
 #         def __init__(self, text, answers, correct):
 #             self.text = text
@@ -43,6 +54,8 @@ init python:
 
     ### квизы
 
+
+
     def load_quiz_texts():
         global quiz_texts
 
@@ -75,17 +88,35 @@ init python:
         renpy.log("Quiz with label '{}' not found after checking all quizzes.".format(label))
         return None
 
+
+
     def show_quiz_screen(quiz_label, character):
         set_study_mode(False)
-        renpy.say(character, "Надеюсь, я ничего важного не забыла. Нужно проверить!")
+        
+        
+        # Выбор случайной фразы
+        random_phrase = random.choice(phrases)
+        renpy.say(character, random_phrase)
+
+        # # Добавляем меню выбора: пропустить квиз или пройти
+        # $ choice = renpy.display_menu([
+        #     ("Пройти квиз", "proceed"),
+        #     ("Пропустить квиз", "skip")
+        # ])
+
+        # if choice == "proceed":
+        #     renpy.call(quiz_label)  # Переход к квизу
+        # elif choice == "skip":
+        #     s "Вы решили пропустить квиз."
+        #     return  # Возврат к предыдущему экрану
 
         # Останавливаем музыку и звук на всех каналах с затуханием
         renpy.music.stop(channel="music", fadeout=2.0)  # Останавливает музыку
         renpy.music.stop(channel="sound", fadeout=2.0)  # Останавливает звуковые эффекты
 
         renpy.call(quiz_label)  # Переход к квизу
-        renpy.say(character, "Отлично")
-        set_study_mode(True)
+        # renpy.say(character, "Отлично")
+        # set_study_mode(True)
 
     def load_quiz_data(quiz_label):
         qt = get_quiz_translator(quiz_label)
@@ -107,19 +138,19 @@ label quiz_s1scene1:
             if answers[0]['correct']:
                 s "[right_answer]"
             else:
-                s "[wrong_answer]"
+                s "[wrong_answer][correct_answer]."
 
         "[answers[1]['text']]" if len(answers) > 1:
             if answers[1]['correct']:
                 s "[right_answer]"
             else:
-                s "[wrong_answer]"
+                s "[wrong_answer][correct_answer]."
 
         "[answers[2]['text']]" if len(answers) > 2:
             if answers[2]['correct']:
                 s "[right_answer]"
             else:
-                s "[wrong_answer]"
+                s "[wrong_answer][correct_answer]."
 
 
 label quiz_s1scene1_opportunities:
@@ -132,13 +163,13 @@ label quiz_s1scene1_opportunities:
             if answers[0]['correct']:
                 s "[right_answer]"
             else:
-                s "[wrong_answer]"
+                s "[wrong_answer][correct_answer]."
 
         "[answers[1]['text']]" if len(answers) > 1:
             if answers[1]['correct']:
                 s "[right_answer]"
             else:
-                s "[wrong_answer]"
+                s "[wrong_answer][correct_answer]."
 
 
 label quiz_s1scene1_announce:
@@ -149,13 +180,13 @@ label quiz_s1scene1_announce:
         s "Переведи слово '[question]'."
         
         "предупреждать":
-            s "[wrong_answer]"
+            s "[wrong_answer][correct_answer]."
 
         "объявлять":
             s "[right_answer]"
 
         "анексировать":
-            s "[wrong_answer]"
+            s "[wrong_answer][correct_answer]."
 
 
 label quiz_s1scene1_sentence_strange:
@@ -170,19 +201,19 @@ label quiz_s1scene1_sentence_strange:
             if answers[0]['correct']:
                 s "[right_answer]"
             else:
-                s "[wrong_answer]"
+                s "[wrong_answer][correct_answer]."
 
         "[answers[1]['text']]" if len(answers) > 1:
             if answers[1]['correct']:
                 s "[right_answer]"
             else:
-                s "[wrong_answer]"
+                s "[wrong_answer][correct_answer]."
 
         "[answers[2]['text']]" if len(answers) > 2:
             if answers[2]['correct']:
                 s "[right_answer]"
             else:
-                s "[wrong_answer]"
+                s "[wrong_answer][correct_answer]."
 
 
 label quiz_s1scene1_audio_announced:
@@ -196,7 +227,7 @@ label quiz_s1scene1_audio_announced:
     if answer == str(correct_answer).lower():
         s "[right_answer]"
     else:
-        s "[wrong_answer]"
+        s "[wrong_answer][correct_answer]."
 
 label quiz_s1scene1_picture_wedding:
     $ question, answers, correct_answer = load_quiz_data("quiz_s1scene1_picture_wedding")
@@ -212,19 +243,19 @@ label quiz_s1scene1_picture_wedding:
             if answers[0]['correct']:
                 s "[right_answer]"
             else:
-                s "[wrong_answer]"
+                s "[wrong_answer][correct_answer]."
 
         "[answers[1]['text']]" if len(answers) > 1:
             if answers[1]['correct']:
                 s "[right_answer]"
             else:
-                s "[wrong_answer]"
+                s "[wrong_answer][correct_answer]."
 
         "[answers[2]['text']]" if len(answers) > 2:
             if answers[2]['correct']:
                 s "[right_answer]"
             else:
-                s "[wrong_answer]"
+                s "[wrong_answer][correct_answer]."
 
     hide screen quiz_image_screen
 
@@ -244,18 +275,18 @@ label quiz_s1scene1_audio_married:
             if answers[0]['correct']:
                 s "[right_answer]"
             else:
-                s "[wrong_answer]"
+                s "[wrong_answer][correct_answer]."
 
         "[answers[1]['text']]" if len(answers) > 1:
             if answers[1]['correct']:
                 s "[right_answer]"
             else:
-                s "[wrong_answer]"
+                s "[wrong_answer][correct_answer]."
 
         "[answers[2]['text']]" if len(answers) > 2:
             if answers[2]['correct']:
                 s "[right_answer]"
             else:
-                s "[wrong_answer]"
+                s "[wrong_answer][correct_answer]."
 
     jump s1scene2

@@ -31,70 +31,10 @@
 	{
 	  "label": "s1ep3_sc1",
 	  "vocabulary": [
-		{
-		  "key": "комната",
-		  "word": "room",
-		  "transcription": "/ruːm/",
-		  "property": ""
-		},
-		{
-		  "key": "соседка",
-		  "word": "roommate",
-		  "transcription": "/njuː ˈruːmmeɪt/",
-		  "property": ""
-		},
-		{
-		  "key": "первый_курс",
-		  "word": "first year",
-		  "transcription": "/fɜːrst jɪər/",
-		  "property": ""
-		},
-		{
-		  "key": "приятно_познакомиться",
-		  "word": "nice to meet you",
-		  "transcription": "/naɪs tə miːt juː/",
-		  "property": ""
-		},
-		{
-		  "key": "библиотека",
-		  "word": "library",
-		  "transcription": "/ˈlaɪbrɛri/",
-		  "property": ""
-		},
-		{
-		  "key": "вещи",
-		  "word": "things",
-		  "transcription": "/θɪŋz/",
-		  "property": ""
-		},
       {
-        "key": "журналистика",
-        "word": "journalism",
-        "transcription": "/ˈdʒɜrnəlɪzəm/",
-        "property": ""
-      },
-      {
-        "key": "биологический",
-        "word": "biological",
-        "transcription": "/ˌbaɪəˈlɒdʒɪkəl/",
-        "property": ""
-      },
-      {
-        "key": "филологический",
-        "word": "philological",
-        "transcription": "/ˌfɪləˈlɒdʒɪkəl/",
-        "property": ""
-      },
-      {
-        "key": "третий",
-        "word": "third",
-        "transcription": "/θɜːrd/",
-        "property": ""
-      },
-      {
-        "key": "четвертый",
-        "word": "fourth",
-        "transcription": "/fɔːrθ/",
+        "key": "комната",
+        "word": "room",
+        "transcription": "/ruːm/",
         "property": ""
       }
 	  ]

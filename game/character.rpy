@@ -4,14 +4,15 @@ init python:
         # "h", # = счастливые состояния
         "n",  # нейтральные состояния
         # "s",  # грустная
-        # "sr",  # серьезные состояния
-        # "che", "o", "xm"  # различные выражения чё, эм, О!, хм
+        "sr",  # серьезные состояния,
+        "magic"
     ]
 
     # Функция для создания изображений, необходима чтобы работал плагин для выделения говорящего персонажа
     def create_character_images(character, states):
         for state in states:
             renpy.image(f"{character} a_{state}", At(f"{character} {state}", sprite_highlight(character)))
+            renpy.image(f"{character} sch a_{state}", At(f"{character} sch {state}", sprite_highlight(character)))
 
 
 
@@ -26,7 +27,15 @@ define n = Character(callback=name_callback, cb_name=None)
 # Сэм
 ################################################################################
 init python:
+
+    # Список доп состояний  Эммы
+    states_sam = [
+        "tt", "uuu", "wink", "smirk", "eb", "evil", "xm"  #различные выражения м, мм(задумчиво,мечтательно), nm - нейтрально, nju - смущение
+    ]   
+
     create_character_images("sam", states) #общие состояния
+    create_character_images("sam", states_sam) #общие состояния
+
     
 define s = Character('Сэм', color="#dbbf81", image="sam", callback=name_callback, cb_name="sam")
 
@@ -60,26 +69,171 @@ image sam face neitral:
     pause 0.3
     repeat
 
+image sam face eyebrow:
+    "sam/eyebrow/sam eyebrow0.png"  with dissolve
+    pause 0.8
+    "sam/eyebrow/sam eyebrow1.png"  with dissolve
+    pause 2.0
+    "sam/neitral/sam neitral.png"  with dissolve
+    choice:
+        pause 1.0 
+    choice:
+        pause 2.0 
+    choice:
+        pause 3.0 
+    "sam/neitral/sam neitral bl.png"  with dissolve
+    pause 0.3
+    repeat
+
+image sam face seriously:
+    "sam/seriously/sam seriously0.png"  with dissolve
+    pause 0.8
+    "sam/seriously/sam seriously1.png"  with dissolve
+    pause 1.5
+    "sam/seriously/sam seriously2.png"  with dissolve
+    pause 0.8
+    "sam/seriously/sam seriously3.png"  with Dissolve(0.3)
+    pause 1.5
+    "sam/seriously/sam seriously4.png"  with Dissolve(0.2)
+    pause 1.8
+    repeat
+
+image sam face smirk:
+    "sam/smirk/sam smirk0.png"  with dissolve
+    pause 1.2
+    "sam/smirk/sam smirk1.png"  with dissolve
+    pause 1.8
+    "sam/neitral/sam neitral.png"  with dissolve
+    choice:
+        pause 1.0 
+    choice:
+        pause 2.0 
+    choice:
+        pause 3.0 
+    "sam/neitral/sam neitral bl.png"  with dissolve
+    pause 0.3
+
+    repeat
+
+
+image sam face temptation:
+    "sam/temptation/sam temptation3.png"  with dissolve
+    pause 1.0
+    # "sam/temptation/sam temptation1.png"  with dissolve
+    # pause 1.5
+    "sam/temptation/sam temptation0.png"  with dissolve
+    pause 0.7
+    "sam/temptation/sam temptation2.png"  with dissolve
+    pause 1.2
+    "sam/neitral/sam neitral.png"  with dissolve
+    choice:
+        pause 1.6 
+    choice:
+        pause 2.2 
+    choice:
+        pause 3.5 
+    "sam/neitral/sam neitral bl.png"  with dissolve
+    pause 0.5
+    repeat
+
+
+image sam face uuu:
+    "sam/uuu/sam uuu0.png"  with dissolve
+    pause 2.8
+    # "sam/uuu/sam uuu1.png"  with dissolve
+    # pause 1.5
+    "sam/neitral/sam neitral.png"  with dissolve
+    choice:
+        pause 1.6 
+    choice:
+        pause 2.2 
+    choice:
+        pause 3.5 
+    "sam/neitral/sam neitral bl.png"  with dissolve
+    pause 0.5
+    "sam/neitral/sam neitral.png"  with dissolve
+    pause 1.5
+    repeat
+
+image sam face wink:
+    "sam/wink/sam wink0.png"  with dissolve
+    pause 0.5
+    "sam/wink/sam wink1.png"  with dissolve
+    pause 1.5
+    "sam/wink/sam wink2.png"  with dissolve
+    pause 0.5
+    "sam/wink/sam wink3.png"  with dissolve
+    pause 1.5
+    "sam/wink/sam wink4.png"  with dissolve
+    pause 0.5
+    repeat
+
+image sam face xm:
+    "sam/different/sam xm0.png"  with dissolve
+    pause 1.2
+    "sam/neitral/sam neitral.png"  with dissolve
+    choice:
+        pause 1.0 
+    choice:
+        pause 2.0 
+    choice:
+        pause 3.0 
+    "sam/neitral/sam neitral bl.png"  with dissolve
+    pause 0.3
+    repeat
+
+image sam face lsmile:
+    "sam/different/sam xm0.png"  with dissolve
+    pause 1.2
+    "sam/neitral/sam neitral.png"  with dissolve
+    choice:
+        pause 1.0 
+    choice:
+        pause 2.0 
+    choice:
+        pause 3.0 
+    "sam/neitral/sam neitral bl.png"  with dissolve
+    pause 0.3
+    repeat
+
 
 # сборка слоев - тела, прически и лица
 layeredimage sam:
 
-    always:
-        "sam body"
+    # always:
+    #     "sam body"
 
     group body:
         attribute b default:
             "sam body"
+        attribute sch:
+            "sam schoolbody"
 
     group emotion:
-        # attribute h:
-        #     "sam face happy"
         attribute n:
             "sam face neitral"
-        # attribute s:
-        #     "sam face sad"
-        # attribute sr:
-        #     "sam face seriously"
+        attribute sr:
+            "sam face seriously"
+        attribute tt:
+            "sam face temptation"
+        attribute uuu:
+            "sam face uuu"
+        attribute wink:
+            "sam face wink"
+        attribute smirk:
+            "sam face smirk"
+        attribute eb:
+            "sam face eyebrow"
+        attribute evil:
+            "sam face evil"
+        attribute xm:
+            "sam face xm"
+        attribute lsmile:
+            "sam face lsmile"
+        attribute magic:
+            "sam face magic"    
+
+        
 
 
 ################################################################################

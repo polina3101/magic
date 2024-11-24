@@ -83,8 +83,8 @@ init python:
 ########################################################################################
 
     # Делаем переменные глобальными для использования в движке Ren'Py
-    renpy.config.native_language = "russian"
-    renpy.config.study_language = "english"
+    renpy.config.native_language = "english"
+    renpy.config.study_language = "spanish"
     renpy.config.translation_on = False # при false реплика отображается на изучаемом языке, при включении - на родном
 
     renpy.config.study_mode = True # при включении этого режима реплики на изучаемом языке и их можно перевести 
@@ -130,7 +130,15 @@ init python:
         renpy.show_screen("vocabulary_screen", vocabulary=vocabulary)
 
         # Массив фраз для выбора
-        phrases = [_("phrase_1"), _("phrase_2"), _("phrase_3")]
+        phrases = [
+            _("Давайте познакомимся с новыми терминами!"),
+            _("Пришло время изучить новые слова!"),
+            _("Как насчет изучения новых слов?"),
+            _("Не упустите шанс расширить свой словарный запас!"),
+            _("Готовы к изучению новых слов?"),
+            _("Изучение новых слов — это всегда интересно!"),
+            _("Давайте откроем для себя новые слова!"),
+        ]
         random_phrase = renpy.random.choice(phrases)
 
         renpy.say(None, random_phrase)

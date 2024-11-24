@@ -333,3 +333,11 @@ translate english strings:
     # game/screens.rpy:1532
     old "Меню"
     new "Menu"
+# TODO: Translation updated at 2024-11-24 14:36
+
+translate english strings:
+
+    # game/screens.rpy:1515
+    old "Язык"
+    new ""
+

@@ -1,0 +1,263 @@
+{
+  "songs": {
+    "song_1": {
+      "title": "song-king-take-magic",
+      "start": "0:0.0",
+      "end": "2:29.7",
+      "lyrics": [
+        {
+          "i": 1,
+          "line": "In a castle cold and towering tall",
+          "timestamp": "0:1.0",
+          "translations": [
+            { "lang": "russian", "text": "В холодном и высоком замке" },
+            { "lang": "spanish", "text": "En un castillo frío y alto" }
+          ]
+        },
+        {
+          "i": 2,
+          "line": "The king took magic for his thrall",
+          "timestamp": "0:11.96",
+          "translations": [
+            { "lang": "russian", "text": "Король взял магию для своего слуги" },
+            { "lang": "spanish", "text": "El rey tomó magia para su esclavo" }
+          ]
+        },
+        {
+          "i": 3,
+          "line": "He seized the dreams from every hall",
+          "timestamp": "0:13.91",
+          "translations": [
+            { "lang": "russian", "text": "Он захватил мечты из каждого зала" },
+            { "lang": "spanish", "text": "Él tomó los sueños de cada sala" }
+          ]
+        },
+        {
+          "i": 4,
+          "line": "And left us in a shadowed fall",
+          "timestamp": "0:15.82",
+          "translations": [
+            { "lang": "russian", "text": "И оставил нас в затененном падении" },
+            { "lang": "spanish", "text": "Y nos dejó en una caída sombría" }
+          ]
+        },
+        {
+          "i": 5,
+          "line": "But hope’s a spark that won’t die out",
+          "timestamp": "0:21.07",
+          "translations": [
+            { "lang": "russian", "text": "Но надежда — это искра, которая не угаснет" },
+            { "lang": "spanish", "text": "Pero la esperanza es una chispa que no se apagará" }
+          ]
+        },
+        {
+          "i": 6,
+          "line": "In hearts of those who dream and shout",
+          "timestamp": "0:21.33",
+          "translations": [
+            { "lang": "russian", "text": "В сердцах тех, кто мечтает и кричит" },
+            { "lang": "spanish", "text": "En los corazones de aquellos que sueñan y gritan" }
+          ]
+        },
+        {
+          "i": 7,
+          "line": "We’ll find the magic through the doubt",
+          "timestamp": "0:23.17",
+          "translations": [
+            { "lang": "russian", "text": "Мы найдем магию через сомнения" },
+            { "lang": "spanish", "text": "Encontraremos la magia a través de la duda" }
+          ]
+        },
+        {
+          "i": 8,
+          "line": "And turn this tale inside out",
+          "timestamp": "0:24.88",
+          "translations": [
+            { "lang": "russian", "text": "И перевернем эту историю" },
+            { "lang": "spanish", "text": "Y daremos la vuelta a esta historia" }
+          ]
+        },
+        {
+          "i": 9,
+          "line": "Bring back the wonder bring back the light",
+          "timestamp": "0:27.08",
+          "translations": [
+            { "lang": "russian", "text": "Верните чудо, верните свет" },
+            { "lang": "spanish", "text": "Devuelve la maravilla, devuelve la luz" }
+          ]
+        },
+        {
+          "i": 10,
+          "line": "Together we’ll dance through the night",
+          "timestamp": "0:30.20",
+          "translations": [
+            { "lang": "russian", "text": "Вместе мы будем танцевать всю ночь" },
+            { "lang": "spanish", "text": "Juntos bailaremos toda la noche" }
+          ]
+        },
+        {
+          "i": 11,
+          "line": "With every step our freedom’s in sight",
+          "timestamp": "0:34.07",
+          "translations": [
+            { "lang": "russian", "text": "С каждым шагом наша свобода на виду" },
+            { "lang": "spanish", "text": "Con cada paso, nuestra libertad está a la vista" }
+          ]
+        },
+        {
+          "i": 12,
+          "line": "Let’s cast a spell and make it right",
+          "timestamp": "0:37.85",
+          "translations": [
+            { "lang": "russian", "text": "Давайте наложим заклинание и сделаем все правильно" },
+            { "lang": "spanish", "text": "Lanzamos un hechizo y lo hacemos bien" }
+          ]
+        },
+        {
+          "i": 13,
+          "line": "In secret whispers through the land",
+          "timestamp": "0:41.80",
+          "translations": [
+            { "lang": "russian", "text": "В тайных шепотах по земле" },
+            { "lang": "spanish", "text": "En susurros secretos a través de la tierra" }
+          ]
+        },
+        {
+          "i": 14,
+          "line": "There lives a song a guiding hand",
+          "timestamp": "0:45.08",
+          "translations": [
+            { "lang": "russian", "text": "Живет песня, направляющая рука" },
+            { "lang": "spanish", "text": "Vive una canción, una mano guía" }
+          ]
+        },
+        {
+          "i": 15,
+          "line": "A melody we'll take a stand",
+          "timestamp": "0:56.0",
+          "translations": [
+            { "lang": "russian", "text": "Мелодия, за которую мы выступим" },
+            { "lang": "spanish", "text": "Una melodía por la que tomaremos una posición" }
+          ]
+        },
+        {
+          "i": 16,
+          "line": "Reclaim the joy the dreams we’ve planned",
+          "timestamp": "1:0.0",
+          "translations": [
+            { "lang": "russian", "text": "Вернем радость, мечты, которые мы запланировали" },
+            { "lang": "spanish", "text": "Reclamemos la alegría, los sueños que hemos planeado" }
+          ]
+        },
+        {
+          "i": 17,
+          "line": "The stars will guide us on our quest",
+          "timestamp": "1:4.0",
+          "translations": [
+            { "lang": "russian", "text": "Звезды будут вести нас в нашем поиске" },
+            { "lang": "spanish", "text": "Las estrellas nos guiarán en nuestra búsqueda" }
+          ]
+        },
+        {
+          "i": 18,
+          "line": "With courage we’ll do our best",
+          "timestamp": "1:8.0",
+          "translations": [
+            { "lang": "russian", "text": "С мужеством мы сделаем все возможное" },
+            { "lang": "spanish", "text": "Con valentía haremos nuestro mejor esfuerzo" }
+          ]
+        },
+        {
+          "i": 19,
+          "line": "Rise above the king’s cruel jest",
+          "timestamp": "1:12.0",
+          "translations": [
+            { "lang": "russian", "text": "Поднимитесь над жестокими шутками короля" },
+            { "lang": "spanish", "text": "Supera la cruel broma del rey" }
+          ]
+        },
+        {
+          "i": 20,
+          "line": "And put his power to the test",
+          "timestamp": "1:16.0",
+          "translations": [
+            { "lang": "russian", "text": "И подвергните его силу испытанию" },
+            { "lang": "spanish", "text": "Y pon su poder a prueba" }
+          ]
+        },
+        {
+          "i": 21,
+          "line": "Bring back the wonder bring back the light",
+          "timestamp": "1:20.0",
+          "translations": [
+            { "lang": "russian", "text": "Верните чудо, верните свет" },
+            { "lang": "spanish", "text": "Devuelve la maravilla, devuelve la luz" }
+          ]
+        },
+        {
+          "i": 22,
+          "line": "Together we’ll dance through the night",
+          "timestamp": "1:24.0",
+          "translations": [
+            { "lang": "russian", "text": "Вместе мы будем танцевать всю ночь" },
+            { "lang": "spanish", "text": "Juntos bailaremos toda la noche" }
+          ]
+        },
+        {
+          "i": 23,
+          "line": "With every step our freedom’s in sight",
+          "timestamp": "1:28.0",
+          "translations": [
+            { "lang": "russian", "text": "С каждым шагом наша свобода на виду" },
+            { "lang": "spanish", "text": "Con cada paso, nuestra libertad está a la vista" }
+          ]
+        },
+        {
+          "i": 24,
+          "line": "Let’s cast a spell and make it right",
+          "timestamp": "1:32.0",
+          "translations": [
+            { "lang": "russian", "text": "Давайте наложим заклинание и сделаем все правильно" },
+            { "lang": "spanish", "text": "Lanzamos un hechizo y lo hacemos bien" }
+          ]
+        },
+        {
+          "i": 25,
+          "line": "Bring back the wonder bring back the light",
+          "timestamp": "1:36.0",
+          "translations": [
+            { "lang": "russian", "text": "Верните чудо, верните свет" },
+            { "lang": "spanish", "text": "Devuelve la maravilla, devuelve la luz" }
+          ]
+        },
+        {
+          "i": 26,
+          "line": "Together we’ll dance through the night",
+          "timestamp": "1:40.0",
+          "translations": [
+            { "lang": "russian", "text": "Вместе мы будем танцевать всю ночь" },
+            { "lang": "spanish", "text": "Juntos bailaremos toda la noche" }
+          ]
+        },
+        {
+          "i": 27,
+          "line": "With every step our freedom’s in sight",
+          "timestamp": "1:44.0",
+          "translations": [
+            { "lang": "russian", "text": "С каждым шагом наша свобода на виду" },
+            { "lang": "spanish", "text": "Con cada paso, nuestra libertad está a la vista" }
+          ]
+        },
+        {
+          "i": 28,
+          "line": "Let’s cast a spell and make it right",
+          "timestamp": "1:48.0",
+          "translations": [
+            { "lang": "russian", "text": "Давайте наложим заклинание и сделаем все правильно" },
+            { "lang": "spanish", "text": "Lanzamos un hechizo y lo hacemos bien" }
+          ]
+        }
+      ]
+    }
+  }
+}

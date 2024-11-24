@@ -1,106 +1,40 @@
 [
   {
-    "label": "s1ep2",
+    "label": "s1scene1",
     "vocabulary": [
       {
-        "key": "спасибо",
-        "word": "Gracias",
-        "transcription": "/ˈɡɾaθjas/",
+        "key": "возможности",
+        "word": "oportunidades",
+        "transcription": "/o.por.tu.niˈða.des/",
         "property": ""
       },
       {
-        "key": "конечно",
-        "word": "Por supuesto",
-        "transcription": "/por suˈpwest̪o/",
+        "key": "выглядеть",
+        "word": "mirar",
+        "transcription": "/miˈraɾ/",
         "property": ""
       },
       {
-        "key": "будь_осторожна",
-        "word": "Ten cuidado",
-        "transcription": "/t̪en kwiˈðaðo/",
+        "key": "объявить",
+        "word": "anunciar",
+        "transcription": "/a.nunˈθjaɾ/",
         "property": ""
       },
       {
-        "key": "дорогая",
-        "word": "Querida",
-        "transcription": "/keˈɾiða/",
-        "property": ""
-      },
-      {
-        "key": "новая_жизнь",
-        "word": "Nueva vida",
-        "transcription": "/ˈnweβa ˈβiða/",
-        "property": ""
-      },
-      {
-        "key": "кампус",
-        "word": "Campus",
-        "transcription": "/ˈkampus/",
-        "property": "difficult"
-      },
-      {
-        "key": "влюбленная_парочка",
-        "word": "Pareja enamorada",
-        "transcription": "/paˈɾexa enamoˈɾaða/",
-        "property": "difficult"
-      },
-      {
-        "key": "школьная_форма",
-        "word": "Uniforme escolar",
-        "transcription": "/uniˈforme eskoˈlaɾ/",
+        "key": "странный",
+        "word": "extraño",
+        "transcription": "/ekˈstɾaɲo/",
         "property": ""
       }
-    ]
+	]
   },
 	{
 	  "label": "s1ep3_sc1",
 	  "vocabulary": [
 		{
-		  "key": "привет",
-		  "word": "hola",
-		  "transcription": "/ˈola/",
-		  "property": ""
-		},
-		{
 		  "key": "комната",
 		  "word": "habitación",
-		  "transcription": "/aβitaˈθjon/ or /aβitaˈsjon/ (depending on region)",
-		  "property": ""
-		},
-		{
-		  "key": "новая_соседка",
-		  "word": "nueva compañera de cuarto",
-		  "transcription": "/ˈnweβa kompaˈɲeɾa ðe ˈkwarto/",
-		  "property": ""
-		},
-		{
-		  "key": "первый_курс",
-		  "word": "primer año",
-		  "transcription": "/priˈmeɾ ˈaɲo/",
-		  "property": ""
-		},
-		{
-		  "key": "приятно_познакомиться",
-		  "word": "mucho gusto",
-		  "transcription": "/ˈmutʃo ˈɡusto/",
-		  "property": ""
-		},
-		{
-		  "key": "библиотека",
-		  "word": "biblioteca",
-		  "transcription": "/biβljoˈteka/",
-		  "property": ""
-		},
-		{
-		  "key": "кровать",
-		  "word": "cama",
-		  "transcription": "/ˈkama/",
-		  "property": ""
-		},
-		{
-		  "key": "вещи",
-		  "word": "cosas",
-		  "transcription": "/ˈkosas/",
+		  "transcription": "/a.biˈta.sjon/",
 		  "property": ""
 		}
 	  ]
