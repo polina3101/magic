@@ -39,10 +39,16 @@ label s1scene0:
 
         "English":
             $ renpy.config.study_language = "english"
+            $ config.auto_voice = "voice/{}/{{id}}.mp3".format(renpy.config.study_language)
+
         "Русский":
             $ renpy.config.study_language = "russian"
+            $ config.auto_voice = "voice/{}/{{id}}.mp3".format(renpy.config.study_language)
+
         "Español":
             $ renpy.config.study_language = "spanish"
+            $ config.auto_voice = "voice/{}/{{id}}.mp3".format(renpy.config.study_language)
+
 
     $ load_quiz_texts()  # Загружаем тексты квизов
     $ load_vocabulary() # загружаем словари
@@ -104,6 +110,7 @@ label s1scene1:
     menu:
         "Пора пройти небольшой квиз." 
         "Пройти квиз":
+            $ set_study_mode(False)
             $ show_quiz_screen("quiz_s1scene1", s)
         "Пропустить квиз":
             pass

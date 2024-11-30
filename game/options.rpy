@@ -41,7 +41,6 @@ define build.name = "magic"
 
 define config.default_language = "english"
 
-
 ## Звуки и музыка ##############################################################
 
 ## Эти три переменные управляют, среди прочего, тем, какие микшеры показываются
@@ -52,7 +51,9 @@ define config.has_sound = True
 define config.has_music = True
 define config.has_voice = True
 
-define config.auto_voice = "{id}.mp3"
+# define config.auto_voice = "voice/{config.native_language}/{id}.mp3"
+define config.auto_voice = "voice/{}/{{id}}.mp3".format(renpy.config.study_language)
+
 
 
 ## Чтобы разрешить игроку тестировать громкость на звуковом или голосовом

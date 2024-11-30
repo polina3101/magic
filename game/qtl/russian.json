@@ -1,90 +1,58 @@
 [
   {
-    "label": "quiz_s1ep2_fill_gap_manage",
-    "question": "Конечно! Я ___, не переживай.",
+    "label": "quiz_s1scene1_getting",
+    "question": "Наш король снова ___ женится?",
     "answers": [
-      { "text": "справлюсь", "correct": true },
-      { "text": "курю", "correct": false },
-      { "text": "пью", "correct": false }
+      { "text": "берется", "correct": true },
+      { "text": "берет", "correct": false },
+      { "text": "дает", "correct": false }
     ]
   },
   {
-    "label": "quiz_s1ep2_translation",
+    "label": "quiz_s1scene1_opportunities",
     "question": "",
     "answers": [
-      { "text": "Конечно", "correct": true },
-      { "text": "Определенно", "correct": false }
+      { "text": "возможности", "correct": true },
+      { "text": "способности", "correct": false }
     ]
   },
   {
-    "label": "quiz_s1ep2_audio",
-    "question": "'Будь ___.'",
+    "label": "quiz_s1scene1_announce",
+    "question": "анонсировать",
+    "answers": []
+  },
+  {
+    "label": "quiz_s1scene1_sentence_strange",
+    "question": "",
     "answers": [
-      { "text": "осторожна", "correct": true },
-      { "text": "внимательна", "correct": false }
+      { "text": "Разве это не странно?", "correct": true },
+      { "text": "Это не странно?", "correct": false },
+      { "text": "Разве это не диапазон?", "correct": false }
     ]
   },
   {
-    "label": "quiz_s1ep2_picture",
-    "question": "'Школьная форма'",
+    "label": "quiz_s1scene1_audio_announced",
+    "question": "",
     "answers": [
-      { "text": "школьная форма", "correct": true },
-      { "text": "повседневная одежда", "correct": false },
-      { "text": "спортивная одежда", "correct": false }
+      { "text": "анонсировано", "correct": true }
     ]
   },
   {
-    "label": "quiz_s1ep2_translate_thank_you",
+    "label": "quiz_s1scene1_picture_wedding",
+    "question": "",
     "answers": [
-      { "text": "Спасибо", "correct": true },
-      { "text": "Общежитие", "correct": false },
-      { "text": "Конечно", "correct": false }
+      { "text": "анонсировать", "correct": false },
+      { "text": "странно", "correct": false },
+      { "text": "свадьба", "correct": true }
     ]
   },
   {
-    "label": "quiz_s1ep2_translate_careful",
-    "question": "осторожна"
-  },
-  {
-    "label": "quiz_s1ep2_fill_gap_new_life",
-    "question": "Эмма начинает свою ___.",
+    "label": "quiz_s1scene1_audio_married",
+    "question": "",
     "answers": [
-      { "text": "новую жизнь", "correct": true },
-      { "text": "новое общежитие", "correct": false },
-      { "text": "новую школьную форму", "correct": false }
-    ]
-  },
-  {
-    "label": "quiz_s1ep2_picture_lovebirds",
-    "question": "'Влюбленная парочка'",
-    "answers": [
-      { "text": "влюбленная парочка", "correct": true },
-      { "text": "школьная форма", "correct": false },
-      { "text": "новая жизнь", "correct": false }
-    ]
-  },
-  {
-    "label": "quiz_s1ep2_translate_lovebirds",
-    "answers": [
-      { "text": "влюбленная парочка", "correct": true },
-      { "text": "новая жизнь", "correct": false },
-      { "text": "школьная форма", "correct": false }
-    ]
-  },
-  {
-    "label": "quiz_s1ep2_sentence_translation",
-    "answers": [
-      { "text": "Я справлюсь, не переживай", "correct": true },
-      { "text": "Я буду осторожна", "correct": false },
-      { "text": "Конечно! Я дойду", "correct": false }
-    ]
-  },
-  {
-    "label": "quiz_s1ep2_picture_campus",
-    "answers": [
-      { "text": "кампус", "correct": true },
-      { "text": "школа", "correct": false },
-      { "text": "общежитие", "correct": false }
+      { "text": "Наш король снова женится?", "correct": true },
+      { "text": "Король объявил о своей свадьбе", "correct": false },
+      { "text": "Разве не слишком поздно жениться в 98 лет?", "correct": false }
     ]
   }
 ]

@@ -53,9 +53,6 @@ init python:
 
 
     ### квизы
-
-
-
     def load_quiz_texts():
         global quiz_texts
 
@@ -216,12 +213,13 @@ label quiz_s1scene1_sentence_strange:
                 s "[wrong_answer][correct_answer]."
 
 
+#заменить на странный
 label quiz_s1scene1_audio_announced:
     # Вопрос: Послушай аудио и напиши пропущенное слово 
     #Ths King has ____ (announced) his wedding to ths daughter of ths Minister of Economy.
     $ question, answers, correct_answer = load_quiz_data("quiz_s1scene1_audio_announced")
 
-    play quiz "audio/quiz/quiz_s1ep2_audio.mp3"
+    play quiz "voice/{}/s1scene1_bdcacca9.mp3".format(renpy.config.study_language)
 
     $ answer = renpy.input("Послушай аудио и напиши пропущенное слово: ").strip().lower()
     if answer == str(correct_answer).lower():
@@ -265,7 +263,7 @@ label quiz_s1scene1_audio_married:
     # Our king is getting married again?
     $ question, answers, correct_answer = load_quiz_data("quiz_s1scene1_audio_married")
 
-    play quiz "audio/quiz/quiz_s1ep2_audio.mp3"
+    play quiz "voice/{}/s1scene1_eb0b201c.mp3".format(renpy.config.study_language)
 
     menu:
         # Вопрос: Послушай аудио и выбери соответствующее предложение
