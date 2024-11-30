@@ -41,9 +41,9 @@ label s1scene0:
             $ renpy.config.study_language = "english"
             $ config.auto_voice = "voice/{}/{{id}}.mp3".format(renpy.config.study_language)
 
-        "Русский":
-            $ renpy.config.study_language = "russian"
-            $ config.auto_voice = "voice/{}/{{id}}.mp3".format(renpy.config.study_language)
+        # "Русский":
+        #     $ renpy.config.study_language = "russian"
+        #     $ config.auto_voice = "voice/{}/{{id}}.mp3".format(renpy.config.study_language)
 
         "Español":
             $ renpy.config.study_language = "spanish"

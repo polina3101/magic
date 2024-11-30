@@ -15,6 +15,16 @@ init python:
             renpy.image(f"{character} sch a_{state}", At(f"{character} sch {state}", sprite_highlight(character)))
 
 
+# Определение переменных для имен персонажей
+define sam_name = _("Сэм")
+define dad_name = _("Отец")
+define ds_name = _("Незнакомец")
+define president_son_name = _("Сын президента")
+define trainee_name = _("Практикантка")
+define teacher_name = _("Учитель")
+define schoolgirl1_name = _("Ученица школы 1")
+define schoolgirl2_name = _("Ученица школы 2")
+define student1_name = _("Ученик")
 
 ################################################################################
 # Персонажи
@@ -28,7 +38,7 @@ define n = Character(callback=name_callback, cb_name=None)
 ################################################################################
 init python:
 
-    # Список доп состояний  Эммы
+    # Список доп состояний  
     states_sam = [
         "tt", "uuu", "wink", "smirk", "eb", "evil", "xm"  #различные выражения м, мм(задумчиво,мечтательно), nm - нейтрально, nju - смущение
     ]   
@@ -37,7 +47,7 @@ init python:
     create_character_images("sam", states_sam) #общие состояния
 
     
-define s = Character('Сэм', color="#dbbf81", image="sam", callback=name_callback, cb_name="sam")
+define s = Character(sam_name, color="#dbbf81", image="sam", callback=name_callback, cb_name="sam")
 
 #мысли Сэма
 define sm = Character(kind=s, color="#cac6b7", what_prefix='(', what_suffix=')', what_italic=True, namebox_background=Frame("gui/mind_namebox.png", Borders(100, 15, 100, 15)))
@@ -240,21 +250,20 @@ layeredimage sam:
 # Отец
 ################################################################################
 
-define d = Character('Отец', color="#e1d2b8", callback=name_callback, cb_name="dad", namebox_background=Frame("gui/sec_namebox.png", Borders(100, 15, 100, 15)))
+define d = Character(dad_name, color="#e1d2b8", callback=name_callback, cb_name="dad", namebox_background=Frame("gui/sec_namebox.png", Borders(100, 15, 100, 15)))
 image dad a_n = At('dad n', sprite_highlight('dad'))
 
 
 ################################################################################
 # Директор школы
 ################################################################################
-default ds_name = "Незнакомец"
-define ds = Character("[ds_name]", color="#e1d2b8", callback=name_callback, cb_name="ds", namebox_background=Frame("gui/sec_namebox.png", Borders(100, 15, 100, 15)))
+define ds = Character(ds_name, color="#e1d2b8", callback=name_callback, cb_name="ds", namebox_background=Frame("gui/sec_namebox.png", Borders(100, 15, 100, 15)))
 image ds a_n = At('ds n', sprite_highlight('ds'))
 
 #Сын президента
 ################################################################################
 
-define ps = Character('Сын президента', color="#e1d2b8", callback=name_callback, cb_name="president_son", namebox_background=Frame("gui/sec_namebox.png", Borders(100, 15, 100, 15)))
+define ps = Character(president_son_name, color="#e1d2b8", callback=name_callback, cb_name="president_son", namebox_background=Frame("gui/sec_namebox.png", Borders(100, 15, 100, 15)))
 image president_son a_n = At('president_son n', sprite_highlight('president_son'))
 
 
@@ -266,7 +275,7 @@ image president_son a_n = At('president_son n', sprite_highlight('president_son'
 # Практикантка
 ################################################################################
 
-define trainee = Character('Практикантка', color="#e1d2b8", callback=name_callback, cb_name="trainee")
+define trainee = Character(trainee_name, color="#e1d2b8", callback=name_callback, cb_name="trainee")
 image trainee a_n = At('trainee n', sprite_highlight('trainee'))
 
 
@@ -274,7 +283,7 @@ image trainee a_n = At('trainee n', sprite_highlight('trainee'))
 # Учитель   
 ################################################################################
 
-define teacher = Character('Учитель', color="#e1d2b8", callback=name_callback, cb_name="teacher")
+define teacher = Character(teacher_name, color="#e1d2b8", callback=name_callback, cb_name="teacher")
 image teacher a_n = At('teacher n', sprite_highlight('teacher'))  
 
 
@@ -282,20 +291,20 @@ image teacher a_n = At('teacher n', sprite_highlight('teacher'))
 # Ученица школы 1
 ################################################################################
 
-define schoolgirl1 = Character('Ученица школы 1', color="#e1d2b8", callback=name_callback, cb_name="schoolgirl1")
+define schoolgirl1 = Character(schoolgirl1_name, color="#e1d2b8", callback=name_callback, cb_name="schoolgirl1")
 image schoolgirl1 a_n = At('schoolgirl1 n', sprite_highlight('schoolgirl1'))
 
 
 #   Ученица школы 2
 ################################################################################
 
-define schoolgirl2 = Character('Ученица школы 2', color="#e1d2b8", callback=name_callback, cb_name="schoolgirl2")
+define schoolgirl2 = Character(schoolgirl2_name, color="#e1d2b8", callback=name_callback, cb_name="schoolgirl2")
 image schoolgirl2 a_n = At('schoolgirl2 n', sprite_highlight('schoolgirl2'))
 
 # Ученик 1
 ################################################################################
 
-define student1 = Character('Ученик', color="#e1d2b8", callback=name_callback, cb_name="student1")
+define student1 = Character(student1_name, color="#e1d2b8", callback=name_callback, cb_name="student1")
 image student1 a_n = At('student1 n', sprite_highlight('student1'))
 
 
